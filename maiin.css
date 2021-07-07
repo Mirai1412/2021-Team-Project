@@ -1,0 +1,42 @@
+body{
+    width: 1200px;
+    height: 1200px;
+    margin: 0 auto;
+}
+.container{
+
+    display: flex;
+    flex-wrap: wrap;
+}
+.Title{
+    margin-top: 30px;
+    border: solid 1px black;
+    width: 1200px;
+    height: 100px;
+}
+
+.nav{
+    border: solid 1px black;
+    width: 250px;
+    height: 700px;
+}
+.main{
+    border: solid 1px black;
+    width: 946px;
+    height: 700px;
+}
+.Title2{
+    border: solid 1px black;
+    width: 1200px;
+    height: 80px;
+}
+li{
+    border: solid 1px black;
+    width: 250px;
+    height: 30px;
+}
+ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+    }
