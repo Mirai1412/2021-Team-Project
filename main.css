@@ -7,7 +7,7 @@ body{
 .Title{
     margin-top: 50px;
     border: solid 1px black;
-    width: 396px;
+    width: 395px;
     height: 100px;
     position: absolute;
     top: 0;
@@ -22,6 +22,7 @@ body{
     height: 700px;
 }
 .nav{
+
     width: 802px;
     height: 800px;
     position: absolute;
@@ -78,13 +79,22 @@ body{
 
       #main-menu > li {
         float: left;
-        position: relative;
-        width: 264.9px;
+        position: absolute;
+        width: 266px;
         border: solid 1px black;
         height: 100px;
-     
       }
       
+      .navps3{
+        right: 0;
+      }
+      .navps2{
+        right: 267px;
+      }
+      .navps1{
+        left: 0px;
+      }
+
       #main-menu > li > a {
         font-size: 0.85rem;
         color: rgba(0, 0, 0, 0.85);

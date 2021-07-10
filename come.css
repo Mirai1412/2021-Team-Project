@@ -15,15 +15,6 @@ body{
     left: 0;
     
 }
-.navps3{
-    right: 0;
-  }
-  .navps2{
-    right: 267px;
-  }
-  .navps1{
-    left: 0px;
-  }
 .iog1{
     width: 396px;
     height: 100px;
@@ -162,4 +153,13 @@ body{
           line-height: 30px;
           margin: 5px 0px 0 0;
           color: black;
+      }
+      .navps3{
+        right: 0;
+      }
+      .navps2{
+        right: 267px;
+      }
+      .navps1{
+        left: 0px;
       }
