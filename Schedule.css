@@ -4,6 +4,7 @@ body{
     margin: 0 auto;
     position: relative;
 }
+
 .Title{
     margin-top: 50px;
     border: solid 1px black;
@@ -12,14 +13,11 @@ body{
     position: absolute;
     top: 0;
     left: 0;
+    
 }
 .iog1{
     width: 396px;
     height: 100px;
-}
-.iog2{
-      width: 1198px;
-    height: 700px;
 }
 .nav{
     width: 802px;
@@ -33,11 +31,20 @@ body{
 }
 .main{
     border: solid 1px black;
-    width: 1198px;
-    height: 700px;
-    position: relative;
+    width: 946px;
+    height: 698px;
+    position: absolute;
     top: 151px;
-    right: 0;
+    right: 0px;
+}
+
+.nav2{
+    border: solid 1px black;
+    width: 250px;
+    height: 698px;
+    position: relative;
+    left: 0;
+    top: 151px;
 }
 
 .Title2{
@@ -48,27 +55,6 @@ body{
     bottom: 0;
 
 }
-
-    .box2{
-        position: absolute;
-        border: solid 1px black;
-        width: 404.5px;
-        height: 44px;
-        top: 77px;
-        left: 143px;
-    }
-    h4{
-        width: 404.5px;
-        height: 44px;
-        margin: 0px;
-        text-align: center;   
-        line-height : 44px
-    }
-    h4:hover{
-        background-color: red;
-    }
- 
-
     /* 상단바 펼치기 */
     ul, li {
         margin: 0;
@@ -76,7 +62,7 @@ body{
         list-style: none;
       }
 
-      #main-menu > li {
+    #main-menu > li {
         float: left;
         position: relative;
         width: 264.9px;
@@ -156,4 +142,15 @@ body{
           right: 10px;
           top: 20px;
     
+      }
+      a{
+          text-decoration: none;
+      }
+      .titlelink{
+          width: 250px;
+          height: 30px;
+          text-align: center;
+          line-height: 30px;
+          margin: 5px 0px 0 0;
+          color: black;
       }
