@@ -11,4 +11,14 @@ class PostsController extends Controller
         return view('post.main');
 
     }
+    public function profile(){
+
+        return view('post.profile');
+
+    }
+    public function login(){
+
+        return view('post.login');
+
+    }
 }

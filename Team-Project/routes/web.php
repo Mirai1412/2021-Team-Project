@@ -18,3 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/post/main',[PostsController::class, 'main'])->name('post.main');
+Route::get('/post/profile',[PostsController::class, 'profile'])->name('post.profile');
+Route::get('/post/login',[PostsController::class, 'login'])->name('post.login');

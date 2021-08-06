@@ -15,12 +15,16 @@
         <div class="max-w-screen-xl mx-auto">
             <!-- header -->
             <header class="flex items-center justify-between py-2 border-b">
-                <a href="로그인.html" class="px-2 lg:px-0 uppercase font-bold text-purple-800">
+                <a
+                    href="{{ route('post.login') }}"
+                    class="px-2 lg:px-0 uppercase font-bold text-purple-800">
                     LOGO
                 </a>
                 <ul class="inline-flex items-center">
                     <li class="px-2 md:px-4">
-                        <a href="프로필.html" class="text-purple-600 font-semibold hover:text-purple-500">
+                        <a
+                            href="{{ route('post.profile') }}"
+                            class="text-purple-600 font-semibold hover:text-purple-500">
                             프로필
                         </a>
                     </li>
@@ -30,7 +34,9 @@
                         </a>
                     </li>
                     <li class="px-2 md:px-4">
-                        <a href="rlt.html" class="text-gray-500 font-semibold hover:text-purple-500">
+                        <a
+                            href="https://github.com/Mirai1412"
+                            class="text-gray-500 font-semibold hover:text-purple-500">
                             git
                         </a>
                     </li>
@@ -89,45 +95,62 @@
                         </div>
                     </a>
 
-                    <a
-                        class="w-full md:w-1/3 relative rounded"
-                        style="height: 24em;"
-                        href="./blog.html">
+                    <!-- eslint-disable -->
+
+                    <div
+                        class="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto"
+                        style="margin: 0 0 0 10px">
+                        <div class="relative h-40">
+                            <img
+                                class="absolute h-full w-full object-cover"
+                                src="https://images.unsplash.com/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80">
+                        </div>
                         <div
-                            class="absolute left-0 top-0 w-full h-full z-10"
-                            style="background-image: linear-gradient(180deg,transparent,rgba(0,0,0,.7));"></div>
-                        <img
-                            src="https://images.unsplash.com/photo-1543362906-acfc16c67564?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1301&q=80"
-                            class="absolute left-0 top-0 w-full h-full rounded z-0 object-cover"/>
-                        <div class="p-4 absolute bottom-0 left-0 z-20">
-                            <span
-                                class="px-4 py-1 bg-black text-gray-200 inline-flex items-center justify-center mb-2">Science</span>
-                            <h2 class="text-3xl font-semibold text-gray-100 leading-tight">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h2>
-                            <div class="flex mt-3">
-                                <img
-                                    src="https://images-na.ssl-images-amazon.com/images/M/MV5BODFjZTkwMjItYzRhMS00OWYxLWI3YTUtNWIzOWQ4Yjg4NGZiXkEyXkFqcGdeQXVyMTQ0ODAxNzE@._V1_UX172_CR0,0,172,256_AL_.jpg"
-                                    class="h-10 w-10 rounded-full mr-2 object-cover"/>
-                                <div>
-                                    <p class="font-semibold text-gray-200 text-sm">
-                                        Chrishell Staus
-                                    </p>
-                                    <p class="font-semibold text-gray-400 text-xs">
-                                        15 Aug
-                                    </p>
-                                </div>
+                            class="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
+                            <img
+                                class="object-cover w-full h-full"
+                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80">
+                        </div>
+                        <div class="mt-16">
+                            <h1 class="text-lg text-center font-semibold">
+                                Cassie
+                            </h1>
+                            <p class="text-sm text-gray-600 text-center">
+                                13 connections in common
+                            </p>
+                        </div>
+                        <div class="mt-6 pt-3 flex flex-wrap mx-6 border-t">
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                                <a href="{{ route('post.made') }}"></a>
+                                go post
+                            </div>
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                                VueJS
+                            </div>
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                                TailwindCSS
+                            </div>
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                                React
+                            </div>
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default">
+                                Painting
                             </div>
                         </div>
                     </div>
-                </a>
+
+                </div>
 
                 <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
-                    <div class="px-6 py-8"
-                    style="padding: 0;">
-                        <div class="container flex justify-between mx-auto"
-                        style="width: 850px;">
+                    <div class="px-6 py-8" style="padding: 0;">
+                        <div class="container flex justify-between mx-auto" style="width: 850px;">
                             <div class="w-full lg:w-8/12">
-                                <div class="flex items-center justify-between"
-                                style="width: 800px;">
+                                <div class="flex items-center justify-between" style="width: 800px;">
                                     <h1 class="text-xl font-bold text-gray-700 md:text-2xl">Post</h1>
                                     <div>
                                         <select
@@ -416,12 +439,6 @@
                             <li>
                                 <a href="" class="block text-gray-600 py-2">Team</a>
                             </li>
-                            <li>
-                                <a href="" class="block text-gray-600 py-2">About us</a>
-                            </li>
-                            <li>
-                                <a href="" class="block text-gray-600 py-2">Press</a>
-                            </li>
                         </ul>
                     </div>
 
@@ -430,15 +447,6 @@
                         <ul>
                             <li>
                                 <a href="" class="block text-gray-600 py-2">Blog</a>
-                            </li>
-                            <li>
-                                <a href="" class="block text-gray-600 py-2">Privacy Policy</a>
-                            </li>
-                            <li>
-                                <a href="" class="block text-gray-600 py-2">Terms & Conditions</a>
-                            </li>
-                            <li>
-                                <a href="" class="block text-gray-600 py-2">Documentation</a>
                             </li>
                         </ul>
                     </div>
