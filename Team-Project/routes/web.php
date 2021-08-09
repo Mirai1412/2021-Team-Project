@@ -14,9 +14,10 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/post/main',[PostsController::class, 'main'])->name('post.main');
-Route::get('/post/profile',[PostsController::class, 'profile'])->name('post.profile');
-Route::get('/post/login',[PostsController::class, 'login'])->name('post.login');
+Route::get('/', [MainController::class, 'mainPage'])->name('mainPage');
+
+Route::get('/posts/main',[PostsController::class, 'main'])->name('post.main');
+Route::get('/posts/profile',[PostsController::class, 'profile'])->name('post.profile');
+Route::get('/posts/login',[PostsController::class, 'login'])->name('post.login');
+Route::get('/posts/made',[PostsController::class, 'made'])->name('post.made')/*->middleware(['auth']) */;
+
