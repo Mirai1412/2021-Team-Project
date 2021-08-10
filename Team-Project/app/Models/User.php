@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name',
         'email',
         'password',
+        'profile_image',
     ];
 
     /**
@@ -40,4 +41,17 @@ class User extends Authenticatable
     protected $casts = [
         'email_verified_at' => 'datetime',
     ];
+
+    public function posts()
+    {
+        return $this->hasMany(Post::class);
+    }
+
+    public function profileImagePath()
+    {
+        //   $path = '/storage/images';
+        $path = env('PROFILE_IMAGE_PATH', '/storage/images/profiles/');
+        $profileImageFile = $this->image ?? 'no_profile_image.png';
+        return $path . $profileImageFile;
+    }
 }

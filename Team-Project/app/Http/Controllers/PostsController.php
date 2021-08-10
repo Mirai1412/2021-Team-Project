@@ -8,31 +8,51 @@ use Illuminate\Support\Facades\Auth;
 
 class PostsController extends Controller
 {
+
+    public function __construct()
+    {
+        $this->middleware('auth')->except(['main', 'show']);
+    }   //main, show 빼고는 로그인이 필요하다
+
     public function main(){
 
-        return view('post.main');
+        $posts = Post::latest()->Paginate(3);
+        return view('post.main', ['posts' => $posts]);
 
     }
-    public function made(){
+    public function made(Request $request){
 
-        return view('post.made');
+        $posts = Post::latest()->Paginate(3);
+
+        return view('post.made', ['posts' => $posts]);
+    }
+
+    // public function profile(){
+
+    //     return view('post.profile');
+
+    // }
+
+    // public function login(){
+
+    //     return view('post.login');
+
+    // }
+
+    public function show(Request $request, $id){
+
+        $page = $request->page;
+        $post = Post::find($id);
+        // $post->count++; // 조회수 증가
+        $post->save(); // DB 반영
+
+        //if (Auth::user() == null && !$post->viewers->contains(false)) {
+        //   \ $post->viewers()->attach(Auth::user()->id);
+        // }
+        return view('posts.show', compact('post', 'page'));
 
     }
-    public function profile(){
 
-        return view('post.profile');
-
-    }
-    public function login(){
-
-        return view('post.login');
-
-    }
-    public function show(){
-
-        return view('post.show');
-
-    }
     public function store(Request $request)
     {
         $title = $request->title;
@@ -59,7 +79,7 @@ class PostsController extends Controller
 
         $post->save();
 
-        return redirect('/posts/index');
+        return redirect('/posts/main');
     }
 
 }

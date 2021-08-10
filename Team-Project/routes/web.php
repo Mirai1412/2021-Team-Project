@@ -14,11 +14,16 @@ use App\Http\Controllers\PostsController;
 |
 */
 
-Route::get('/', [MainController::class, 'mainPage'])->name('mainPage');
+
+
+
+require __DIR__ . '/auth.php'; // 라라벨 로그인
 
 Route::get('/posts/main',[PostsController::class, 'main'])->name('post.main');
-Route::get('/posts/profile',[PostsController::class, 'profile'])->name('post.profile');
-Route::get('/posts/login',[PostsController::class, 'login'])->name('post.login');
+// Route::get('/posts/profile',[PostsController::class, 'profile'])->name('post.profile');
+// Route::get('/posts/login',[PostsController::class, 'login'])->name('post.login');
 Route::get('/posts/made',[PostsController::class, 'made'])->name('post.made')/*->middleware(['auth']) */;
 
-Route::get('/posts/show',[PostsController::class, 'show'])->name('post.show');
+Route::post('/posts/store', [PostController::class, 'store'])->name('posts.store');
+
+Route::get('/posts/show/{id}',[PostsController::class, 'show'])->name('post.show');
