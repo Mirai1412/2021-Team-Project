@@ -28,7 +28,11 @@ class PostsController extends Controller
         return view('post.login');
 
     }
+    public function show(){
 
+        return view('post.show');
+
+    }
     public function store(Request $request)
     {
         $title = $request->title;

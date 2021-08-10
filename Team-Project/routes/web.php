@@ -21,3 +21,4 @@ Route::get('/posts/profile',[PostsController::class, 'profile'])->name('post.pro
 Route::get('/posts/login',[PostsController::class, 'login'])->name('post.login');
 Route::get('/posts/made',[PostsController::class, 'made'])->name('post.made')/*->middleware(['auth']) */;
 
+Route::get('/posts/show',[PostsController::class, 'show'])->name('post.show');
