@@ -24,6 +24,6 @@ Route::get('/posts/main',[PostsController::class, 'main'])->name('post.main');
 // Route::get('/posts/login',[PostsController::class, 'login'])->name('post.login');
 Route::get('/posts/made',[PostsController::class, 'made'])->name('post.made')/*->middleware(['auth']) */;
 
-Route::post('/posts/store', [PostController::class, 'store'])->name('posts.store');
+Route::post('/posts/store', [PostsController::class, 'store'])->name('posts.store');
 
 Route::get('/posts/show/{id}',[PostsController::class, 'show'])->name('post.show');
