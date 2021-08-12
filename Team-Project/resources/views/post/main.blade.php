@@ -7,32 +7,38 @@
         <link rel="stylesheet" href="/css/main.css">
     </head>
     <body>
-        <div class="max-w-screen-xl mx-auto"
-        >
-
+        <div class="max-w-screen-xl mx-auto" style="width: 2400px; margin: 0 auto;">
             <!-- header -->
             <header
                 class="flex items-center justify-between py-2 border-b"
-                style="margin-top:10px;">
+                style="margin-top:10px; width: 1280; ">
 
-                <input type="checkbox" id = "menuicon">
+                <input type="checkbox" id="menuicon">
                 <label for="menuicon" style="">
                     <span></span>
                     <span></span>
                     <span></span>
                 </label>
                 <div class="sidebar">
-                    <h1 style="color: white; font-size: 20px">글 목록</h1>
-                    <h1 style="color: white; font-size: 10px"> 라라벨</h1>
-                    <h1 style="color: white; font-size: 10px"> 자바</h1></h1>
-                    <h1 style="color: white; font-size: 10px">php</h1>
+                    <h1
+                        style="color: white; font-size: 20px; margin: 50px 15px 0 0;
+                    text-align: right">Code</h1>
+                    <h1
+                        style="color: white; font-size: 20px; margin: 50px 15px 0 0;
+                     text-align: right">공지사항</h1>
+                    <h1
+                        style="color: white; font-size: 20px; margin: 50px 15px 0 0;
+                      text-align: right">뉴스</h1>
+                    <h1
+                        style="color: white; font-size: 20px; margin: 50px 15px 0 0;
+                    text-align: right">문서</h1>
                 </div>
-
                 <a
                     href="{{ route('post.main') }}"
                     class="px-2 lg:px-0 uppercase font-bold text-purple-800"
-                    style="margin: 0 550px 0 0">
-                    HOME
+                    style="margin: 0 530px 0 0">
+
+                    Code Finder
                 </a>
                 <ul class="inline-flex items-center">
                     <li class="px-2 md:px-4">
@@ -103,7 +109,9 @@
             <main class="mt-10">
                 <div class="block md:flex md:space-x-2 px-2 lg:p-0">
 
-                    <div style="border: solid 1px black; width: 870px;" class="section">
+                    <div
+                        style="border: solid 1px black; width: 870px; height: 300px;"
+                        class="section">
                         <input
                             type="radio"
                             name="slide"
@@ -130,20 +138,20 @@
                                         <img src="/img/01.jpg">
                                     </a>
                                 </li>
-                            <div class="slide-control">
-                                <div class="control01">
-                                    <label for="slide03" class="left"></label>
-                                    <label for="slide02" class="right"></label>
+                                <div class="slide-control">
+                                    <div class="control01">
+                                        <label for="slide03" class="left"></label>
+                                        <label for="slide02" class="right"></label>
+                                    </div>
+                                    <div class="control02">
+                                        <label for="slide01" class="left"></label>
+                                        <label for="slide03" class="right"></label>
+                                    </div>
+                                    <div class="control03">
+                                        <label for="slide02" class="left"></label>
+                                        <label for="slide01" class="right"></label>
+                                    </div>
                                 </div>
-                                <div class="control02">
-                                    <label for="slide01" class="left"></label>
-                                    <label for="slide03" class="right"></label>
-                                </div>
-                                <div class="control03">
-                                    <label for="slide02" class="left"></label>
-                                    <label for="slide01" class="right"></label>
-                                </div>
-                            </div>
                             </ul>
                         </div>
                         {{-- <img src="{{ asset('img/01.jpg') }}" > --}}
@@ -154,22 +162,14 @@
 
                     <div
                         class="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto"
-                        style="margin: 0 0 0 10px; border: solid 1px black;">
-                        <div class="relative h-40">
-                            <img
-                                class="absolute h-full w-full object-cover"
-                                src="https://images.unsplash.com/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80">
-                        </div>
+                        style="margin: 0 0 0 10px; border: solid 1px black;  height: 300px;">
 
                         @if (Auth::check())
-                        <div class="a">
+                        <div class="mt-16" style="margin-top: 25px">
                             <img
                                 class=""
                                 src="{{ Auth::user()->profileImagePath() }}"
-                                style="width: 50px; height:50px">
-                        </div>
-
-                        <div class="mt-16">
+                                style="width: 100px; height:100px; margin: 0 auto">
                             <h1 class="text-lg text-center font-semibold">
                                 {{ Auth::user()->name }}
                             </h1>
@@ -177,7 +177,6 @@
                                 작성한 게시물:
                                 {{ $users = Auth::user()->posts()->count(); }}개
                             </h1>
-
                         </div>
                         @else
                         <div
@@ -219,8 +218,9 @@
                 </div>
             </a>
 
-            <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10"
-            style="margin-top: 10px">
+            <div
+                class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10"
+                style="margin-top: 10px">
                 <div class="px-6 py-8" style="padding: 0; border: solid 1px black;">
                     <div class="container flex justify-between mx-auto" style="width: 870px;">
                         <div class="w-full lg:w-8/12" style="width: 850px;">
@@ -278,7 +278,10 @@
                 <!-- right sidebar -->
                 <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black;width: 384px;">
                     <!-- topics -->
-                    <div class="mb-4" style=" width: 300px;">
+                    <div
+                        class="mb-4"
+                        style=" width: 300px;
+                    margin: 0 auto; margin-top: 10px">
                         <h5 class="font-bold text-lg uppercase text-gray-700 px-1 mb-2">
                             Popular Topics
                         </h5>
@@ -323,7 +326,10 @@
                     </div>
 
                     <!-- subscribe -->
-                    <div class="px-8 mt-10" style="width: 350px; padding: 10px;">
+                    <div
+                        class="px-8 mt-10"
+                        style="width: 350px; padding: 10px;
+                    margin: 5px">
                         <h1 class="mb-4 text-xl font-bold text-gray-700">Categories</h1>
                         <div
                             class="flex flex-col max-w-sm px-4 py-6 mx-auto bg-white rounded-lg shadow-md">
@@ -397,39 +403,41 @@
         <!-- footer -->
         <footer
             class="border-t mt-32 pt-12 pb-32 px-4 lg:px-0"
-            style="margin: 0 0 0 0px;">
+            style="margin: 0 0 0 0px; ">
             <div class="flex">
 
-                <div class="w-full md:w-1/3 lg:w-1/4">
-                    <h6 class="font-semibold text-gray-700 mb-4">Company</h6>
+                <div class="w-full md:w-1/3 lg:w-1/4" style="width: 700px; margin-left: 50px">
+                    <h6 class="font-semibold text-gray-700 mb-4">CodeFinder</h6>
                     <ul>
                         <li>
-                            <a href="" class="block text-gray-600 py-2">Team</a>
+                            <p>
+                                대표자 : 임채환 | 등록번호 : 1801233 | 주소 : 대구광역시 북구 복현로 35(복현동)</ㅔ>
                         </li>
                         <li>
-                            <a href="" class="block text-gray-600 py-2">About us</a>
+                            <p>
+                                개인정보관리책임자 : 예승재(tmdwo7017@naver.com)</p>
                         </li>
+                        <br>
                         <li>
-                            <a href="" class="block text-gray-600 py-2">Press</a>
+                            <p>관리자는 절대 개인정보 및 전화번호를 개인적으로 묻지 않습니다.
+                            </p>
+                            <p>개인의 부주의로 발생하는 사고에 대해서는 CodeFinder는 책임지지 않습니다.
+                            </p>
                         </li>
+                        <br>
                     </ul>
                 </div>
 
-                <div class="w-full md:w-1/3 lg:w-1/4">
-                    <h6 class="font-semibold text-gray-700 mb-4">Content</h6>
+                <div class="w-full md:w-1/3 lg:w-1/4" style="width: 700px; margin-left: 50px">
+                    <h6 class="font-semibold text-gray-700 mb-4">고객센터 1692-0825</h6>
                     <ul>
                         <li>
-                            <a href="" class="block text-gray-600 py-2">Blog</a>
+                            <p>영업시간 AM 10:00 ~ PM 17:00 (주말 및 공휴일 휴무)</p>
                         </li>
                         <li>
-                            <a href="" class="block text-gray-600 py-2">Privacy Policy</a>
+                            <p>점심시간 PM 12:30 ~ PM 13:30</p>
                         </li>
-                        <li>
-                            <a href="" class="block text-gray-600 py-2">Terms & Conditions</a>
-                        </li>
-                        <li>
-                            <a href="" class="block text-gray-600 py-2">Documentation</a>
-                        </li>
+                        <div class="link"></div>
                     </ul>
                 </div>
 
