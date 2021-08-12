@@ -221,8 +221,10 @@
     <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
         <div class="px-6 py-8" style="padding: 0; border: solid 1px black;">
             <div class="container flex justify-between mx-auto" style="width: 850px;">
-                <div class="w-full lg:w-8/12">
-                    <div class="flex items-center justify-between" style="width: 800px;">
+                <div class="w-full lg:w-8/12" style="width: 850px;">
+                    <div
+                        class="flex items-center justify-between"
+                        style="width: 796px; margin: 15px 0 0 27px">
                         <h1 class="text-xl font-bold text-gray-700 md:text-2xl">Post</h1>
                         <div>
                             <select
@@ -236,8 +238,9 @@
                     @foreach ($posts as $post )
 
                     <div class="mt-6">
-                        <div class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md"
-                        >
+                        <div
+                            class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md"
+                            style="margin: 0 0 0 25px; width: 800px;">
                             <div class="flex items-center justify-between">
                                 <span class="font-light text-gray-600">{{ $post->created_at->diffForHumans() }}</span>
                                 <a
@@ -249,7 +252,9 @@
                                 <p class="mt-2 text-gray-600">{!! $post->content !!}</p>
                             </div>
                             <div class="flex items-center justify-between mt-4">
-                                <a href="글.html" class="text-blue-500 hover:underline">Read more</a>
+                                <a
+                                    href="{{ route('post.show', ['id' => $post]) }}"
+                                    class="text-blue-500 hover:underline">Read more</a>
                                 <div>
                                     <a href="#" class="flex items-center"><img
                                         src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
@@ -269,7 +274,7 @@
         </div>
 
         <!-- right sidebar -->
-        <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black;width: 380px;">
+        <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black;width: 384px;">
             <!-- topics -->
             <div class="mb-4" style=" width: 300px;">
                 <h5 class="font-bold text-lg uppercase text-gray-700 px-1 mb-2">
@@ -390,7 +395,7 @@
 <!-- footer -->
 <footer
     class="border-t mt-32 pt-12 pb-32 px-4 lg:px-0"
-    style="margin: 0 0 0 50px;">
+    style="margin: 0 0 0 0px;">
     <div class="flex">
 
         <div class="w-full md:w-1/3 lg:w-1/4">

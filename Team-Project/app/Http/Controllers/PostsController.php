@@ -39,18 +39,17 @@ class PostsController extends Controller
 
     // }
 
-    public function show(Request $request, $id){
-
+    public function show(Request $request, $id)
+    {
         $page = $request->page;
         $post = Post::find($id);
-        // $post->count++; // 조회수 증가
+        $post->views++; // 조회수 증가
         $post->save(); // DB 반영
 
         //if (Auth::user() == null && !$post->viewers->contains(false)) {
         //   \ $post->viewers()->attach(Auth::user()->id);
         // }
-        return view('posts.show', compact('post', 'page'));
-
+        return view('post.show', compact('post', 'page'));
     }
 
     public function store(Request $request)

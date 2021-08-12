@@ -4,81 +4,39 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <link rel="stylesheet" href="/css/main.css">
     </head>
-    <style>
-        .max-w-4xl {
-            width: 800px;
-
-        }
-
-        .section .slidewrap {
-            max-width: 800px;
-            margin: 0 auto;
-            overflow: hidden;
-        }
-        .section .slidelist {
-            white-space: nowrap;
-            font-size: 0;
-
-        }
-        .section .slidelist > li {
-            display: inline-block;
-            vertical-align: middle;
-            width: 100%;
-            transition: all 0.5s;
-        }
-        .section .slidelist > li > a {
-            display: block;
-            position: relative;
-        }
-        .section .slidelist > li > a img {
-            width: 50%;
-            height: 30%;
-        }
-        .section .slidelist label {
-            position: absolute;
-            z-index: 10;
-            top: 50%;
-            transform: translateY(-50%);
-            pad: 50px;
-            cursor: pointer;
-        }
-        .section .slidelist .left {
-            left: 30px;
-            background: url("/img/01.jpg") center center / 100% no-repeat;
-        }
-        .section .slidelist .right {
-            right: 30px;
-            background: url("/img/01.jpg") center center;
-        }
-        .section .slide-control [class*="control"] {
-            display: none;
-        }
-        .section [id="slide01"]:checked ~ .slidewrap .slidelist > li {
-            transform: translateX(0%);
-        }
-        .section [id="slide02"]:checked ~ .slidewrap .slidelist > li {
-            transform: translateX(-100%);
-        }
-        .section [id="slide03"]:checked ~ .slidewrap .slidelist > li {
-            transform: translateX(-200%);
-        }
-    </style>
-
     <body>
-        <div class="max-w-screen-xl mx-auto">
+        <div class="max-w-screen-xl mx-auto"
+        >
+
             <!-- header -->
             <header
                 class="flex items-center justify-between py-2 border-b"
-                style="margin-top:10px">
+                style="margin-top:10px;">
+
+                <input type="checkbox" id = "menuicon">
+                <label for="menuicon" style="">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+                <div class="sidebar">
+                    <h1 style="color: white; font-size: 20px">글 목록</h1>
+                    <h1 style="color: white; font-size: 10px"> 라라벨</h1>
+                    <h1 style="color: white; font-size: 10px"> 자바</h1></h1>
+                    <h1 style="color: white; font-size: 10px">php</h1>
+                </div>
+
                 <a
                     href="{{ route('post.main') }}"
-                    class="px-2 lg:px-0 uppercase font-bold text-purple-800">
+                    class="px-2 lg:px-0 uppercase font-bold text-purple-800"
+                    style="margin: 0 550px 0 0">
                     HOME
                 </a>
                 <ul class="inline-flex items-center">
                     <li class="px-2 md:px-4">
-                        <a href="프로필.html" class="text-purple-600 font-semibold hover:text-purple-500">
+                        <a href="" class="text-purple-600 font-semibold hover:text-purple-500">
                             프로필
                         </a>
                     </li>
@@ -145,46 +103,47 @@
             <main class="mt-10">
                 <div class="block md:flex md:space-x-2 px-2 lg:p-0">
 
-                    <div style="border: solid 1px black; width: 850px;" class="section">
+                    <div style="border: solid 1px black; width: 870px;" class="section">
                         <input
                             type="radio"
                             name="slide"
-                            d="slide01"
+                            id="slide01"
                             checked="checked"
                             style="display: none;">
                         <input type="radio" name="slide" id="slide02" style="display: none;">
                         <input type="radio" name="slide" id="slide03" style="display: none;">
-                        <div class="slidwrap">
+
+                        <div class="slidewrap">
                             <ul class="slidelist">
                                 <li>
                                     <a>
-                                        <img src="{{ asset('img/01.jpg') }}">
+                                        <img src="/img/05.jpg">
                                     </a>
                                 </li>
                                 <li>
                                     <a>
-                                        <img src="{{ asset('img/02.jpg') }}">
+                                        <img src="/img/02.jpg">
                                     </a>
                                 </li>
                                 <li>
                                     <a>
-                                        <img src="{{ asset('img/03.jpg') }}">
+                                        <img src="/img/01.jpg">
                                     </a>
                                 </li>
-                                <div class="slide-control">
-                                    <div class="control01">
-                                        <label for="slide03" class="left"></label>
-                                        <label for="slide02" class="right"></label>
-                                    </div>
-                                    <div class="control02">
-                                        <label for="slide01" class="left"></label>
-                                        <label for="slide03" class="right"></label>
-                                    </div>
-                                    <div class="control02">
-                                        <label for="slide02" class="left"></label>
-                                        <label for="slide01" class="right"></label>
-                                    </div>
+                            <div class="slide-control">
+                                <div class="control01">
+                                    <label for="slide03" class="left"></label>
+                                    <label for="slide02" class="right"></label>
                                 </div>
+                                <div class="control02">
+                                    <label for="slide01" class="left"></label>
+                                    <label for="slide03" class="right"></label>
+                                </div>
+                                <div class="control03">
+                                    <label for="slide02" class="left"></label>
+                                    <label for="slide01" class="right"></label>
+                                </div>
+                            </div>
                             </ul>
                         </div>
                         {{-- <img src="{{ asset('img/01.jpg') }}" > --}}
@@ -202,15 +161,8 @@
                                 src="https://images.unsplash.com/photo-1448932133140-b4045783ed9e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80">
                         </div>
 
-                        <div
-                            class="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
-                            <img
-                                class="object-cover w-full h-full"
-                                src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=200&q=80">
-                        </div>
-
                         @if (Auth::check())
-                        <div class="">
+                        <div class="a">
                             <img
                                 class=""
                                 src="{{ Auth::user()->profileImagePath() }}"
@@ -267,12 +219,15 @@
                 </div>
             </a>
 
-            <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10">
+            <div class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10"
+            style="margin-top: 10px">
                 <div class="px-6 py-8" style="padding: 0; border: solid 1px black;">
-                    <div class="container flex justify-between mx-auto" style="width: 850px;">
-                        <div class="w-full lg:w-8/12">
-                            <div class="flex items-center justify-between" style="width: 800px;">
-                                <h1 class="text-xl font-bold text-gray-700 md:text-2xl">Post</h1>
+                    <div class="container flex justify-between mx-auto" style="width: 870px;">
+                        <div class="w-full lg:w-8/12" style="width: 850px;">
+                            <div
+                                class="flex items-center justify-between"
+                                style="width: 796px; margin: 15px 0 0 27px">
+                                <h1 class="text-xl font-bold text-gray-700 md:text-2xl">Popular Writing</h1>
                                 <div>
                                     <select
                                         class="w-full border-gray-300 rounded-md shadow-sm focus:border-indigo-300 focus:ring focus:ring-indigo-200 focus:ring-opacity-50">
@@ -287,7 +242,7 @@
                             <div class="mt-6">
                                 <div
                                     class="max-w-4xl px-10 py-6 mx-auto bg-white rounded-lg shadow-md"
-                                    style="margin: 0 auto">
+                                    style="margin: 0 0 0 25px; width: 800px;">
                                     <div class="flex items-center justify-between">
                                         <span class="font-light text-gray-600">{{ $post->created_at->diffForHumans() }}</span>
                                         <a
@@ -299,7 +254,9 @@
                                         <p class="mt-2 text-gray-600">{!! $post->content !!}</p>
                                     </div>
                                     <div class="flex items-center justify-between mt-4">
-                                        <a href="글.html" class="text-blue-500 hover:underline">Read more</a>
+                                        <a
+                                            href="{{ route('post.show', ['id' => $post]) }}"
+                                            class="text-blue-500 hover:underline">Read more</a>
                                         <div>
                                             <a href="#" class="flex items-center"><img
                                                 src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=731&amp;q=80"
@@ -319,7 +276,7 @@
                 </div>
 
                 <!-- right sidebar -->
-                <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black;width: 380px;">
+                <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black;width: 384px;">
                     <!-- topics -->
                     <div class="mb-4" style=" width: 300px;">
                         <h5 class="font-bold text-lg uppercase text-gray-700 px-1 mb-2">
@@ -440,7 +397,7 @@
         <!-- footer -->
         <footer
             class="border-t mt-32 pt-12 pb-32 px-4 lg:px-0"
-            style="margin: 0 0 0 50px;">
+            style="margin: 0 0 0 0px;">
             <div class="flex">
 
                 <div class="w-full md:w-1/3 lg:w-1/4">
