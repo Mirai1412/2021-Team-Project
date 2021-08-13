@@ -11,7 +11,7 @@
             <!-- header -->
             <header
                 class="flex items-center justify-between py-2 border-b"
-                style="margin-top:10px; width: 1280; ">
+                style="margin-top:10px; ">
 
                 <input type="checkbox" id="menuicon">
                 <label for="menuicon" style="">
@@ -22,26 +22,26 @@
                 <div class="sidebar">
                     <h1
                         style="color: white; font-size: 20px; margin: 50px 15px 0 0;
-                    text-align: right">Code</h1>
+                    text-align: right">공지사항</h1>
                     <h1
                         style="color: white; font-size: 20px; margin: 50px 15px 0 0;
-                     text-align: right">공지사항</h1>
+                     text-align: right">고객센터</h1>
                     <h1
                         style="color: white; font-size: 20px; margin: 50px 15px 0 0;
-                      text-align: right">뉴스</h1>
+                      text-align: right">언어</h1>
                     <h1
                         style="color: white; font-size: 20px; margin: 50px 15px 0 0;
-                    text-align: right">문서</h1>
+                    text-align: right">상담</h1>
                 </div>
                 <a
                     href="{{ route('post.main') }}"
                     class="px-2 lg:px-0 uppercase font-bold text-purple-800"
-                    style="margin: 0 530px 0 0">
+                    style="margin: 0 700px 0 0">
 
                     Code Finder
                 </a>
                 <ul class="inline-flex items-center">
-                    <li class="px-2 md:px-4">
+                    {{-- <li class="px-2 md:px-4">
                         <a href="" class="text-purple-600 font-semibold hover:text-purple-500">
                             프로필
                         </a>
@@ -67,6 +67,12 @@
                         <a href="달력.html" class="text-gray-500 font-semibold hover:text-purple-500">
                             달력
                         </a>
+                    </li> --}}
+
+                    <li class="px-2 md:px-4">
+                        <h1 class="text-lg text-center font-semibold">
+                            Welcome! {{ Auth::user()->name }}
+                        </h1>
                     </li>
 
                     <li class="px-2 md:px-4 hidden md:block">
@@ -110,7 +116,7 @@
                 <div class="block md:flex md:space-x-2 px-2 lg:p-0">
 
                     <div
-                        style="border: solid 1px black; width: 870px; height: 300px;"
+                        style="border: solid 1px black; width: 1280px; height: 300px;"
                         class="section">
                         <input
                             type="radio"
@@ -160,7 +166,7 @@
 
                     <!-- eslint-disable -->
 
-                    <div
+                    {{-- <div
                         class="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto"
                         style="margin: 0 0 0 10px; border: solid 1px black;  height: 300px;">
 
@@ -213,7 +219,7 @@
                                 Painting
                             </div>
                         </div>
-                    </div>
+                    </div> --}}
 
                 </div>
             </a>
@@ -221,9 +227,9 @@
             <div
                 class="block lg:flex lg:space-x-2 px-2 lg:p-0 mt-10 mb-10"
                 style="margin-top: 10px">
-                <div class="px-6 py-8" style="padding: 0; border: solid 1px black;">
+                <div class="px-6 py-8" style="padding: 0;">
                     <div class="container flex justify-between mx-auto" style="width: 870px;">
-                        <div class="w-full lg:w-8/12" style="width: 850px;">
+                        {{-- <div class="w-full lg:w-8/12" style="width: 850px;">
                             <div
                                 class="flex items-center justify-between"
                                 style="width: 796px; margin: 15px 0 0 27px">
@@ -271,58 +277,82 @@
                             </div>
                             @endforeach
 
+                        </div> --}}
+
+                        <div class="tab_content">
+                            <input type="radio" name="tabmenu" id="tab01" checked>
+                            <label for="tab01">Laravel</label>
+                            <input type="radio" name="tabmenu" id="tab02" >
+                            <label for="tab02">HTML&CSS</label>
+                            <input type="radio" name="tabmenu" id="tab03" >
+                            <label for="tab03">JAVA</label>
+                            <input type="radio" name="tabmenu" id="tab04" >
+                            <label for="tab04">JavaScript</label>
+                            <input type="radio" name="tabmenu" id="tab05" >
+                            <label for="tab05">PHP</label>
+
+                            <div class="conbox con1">Laravel</div>
+                            <div class="conbox con2">HTML&CSS</div>
+                            <div class="conbox con3">JAVA</div>
+                            <div class="conbox con4">JavaScript</div>
+                            <div class="conbox con5">PHP</div>
                         </div>
+
+
                     </div>
                 </div>
 
                 <!-- right sidebar -->
-                <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black;width: 384px;">
+                <div class="w-full lg:w-1/3 px-3" style="border: solid 1px black; width: 400px;">
                     <!-- topics -->
                     <div
-                        class="mb-4"
-                        style=" width: 300px;
-                    margin: 0 auto; margin-top: 10px">
-                        <h5 class="font-bold text-lg uppercase text-gray-700 px-1 mb-2">
-                            Popular Topics
-                        </h5>
-                        <ul>
-                            <li
-                                class="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                                <a href="#" class="flex items-center text-gray-600 cursor-pointer">
-                                    <span class="inline-block h-4 w-4 bg-green-300 mr-3"></span>
-                                    Nutrition
-                                    <span class="text-gray-500 ml-auto">23 articles</span>
-                                    <i class='text-gray-500 bx bx-right-arrow-alt ml-1'></i>
+                        class="bg-white my-12 pb-6 w-full justify-center items-center overflow-hidden md:max-w-sm rounded-lg shadow-sm mx-auto"
+                        style="margin: 10px; border: solid 1px black;  height: 280px; width: 350px;">
+
+                        @if (Auth::check())
+                        <div class="mt-16" style="margin-top: 25px">
+                            <img
+                                class=""
+                                src="{{ Auth::user()->profileImagePath() }}"
+                                style="width: 100px; height:100px; margin: 0 auto">
+                            <h1 class="text-lg text-center font-semibold">
+                                {{ Auth::user()->name }}
+                            </h1>
+                            <h1 class="text-sg text-center">
+                                작성한 게시물:
+                                {{ $users = Auth::user()->posts()->count(); }}개
+                            </h1>
+                        </div>
+                        @else
+                        <div
+                            class="relative shadow mx-auto h-24 w-24 -my-12 border-white rounded-full overflow-hidden border-4">
+                            <img class="object-cover w-full h-full" src="">
+                        </div>
+                        <div class="mt-16">
+                            <h1 class="text-lg text-center font-semibold">
+                                로그인 바랍니다.
+                            </h1>
+                        </div>
+                        @endif
+
+                        <div class="mt-6 pt-3 flex flex-wrap mx-6 border-t">
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default"
+                                style="width: 80px; height: 30px; text-align: center; line-height: 30px">
+                                <a href="{{ route('post.made') }}"> 글쓰기
                                 </a>
-                            </li>
-                            <li
-                                class="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                                <a href="#" class="flex items-center text-gray-600 cursor-pointer">
-                                    <span class="inline-block h-4 w-4 bg-indigo-300 mr-3"></span>
-                                    Food & Diet
-                                    <span class="text-gray-500 ml-auto">18 articles</span>
-                                    <i class='text-gray-500 bx bx-right-arrow-alt ml-1'></i>
-                                </a>
-                            </li>
-                            <li
-                                class="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                                <a href="#" class="flex items-center text-gray-600 cursor-pointer">
-                                    <span class="inline-block h-4 w-4 bg-yellow-300 mr-3"></span>
-                                    Workouts
-                                    <span class="text-gray-500 ml-auto">34 articles</span>
-                                    <i class='text-gray-500 bx bx-right-arrow-alt ml-1'></i>
-                                </a>
-                            </li>
-                            <li
-                                class="px-1 py-4 border-b border-t border-white hover:border-gray-200 transition duration-300">
-                                <a href="#" class="flex items-center text-gray-600 cursor-pointer">
-                                    <span class="inline-block h-4 w-4 bg-blue-300 mr-3"></span>
-                                    Immunity
-                                    <span class="text-gray-500 ml-auto">9 articles</span>
-                                    <i class='text-gray-500 bx bx-right-arrow-alt ml-1'></i>
-                                </a>
-                            </li>
-                        </ul>
+                            </div>
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default"
+                                style="width: 80px; height: 30px; text-align: center; line-height: 30px">
+                                VueJS
+                            </div>
+                            <div
+                                class="text-xs mr-2 my-1 uppercase tracking-wider border px-2 text-indigo-600 border-indigo-600 hover:bg-indigo-600 hover:text-indigo-100 cursor-default"
+                                style="width: 80px; height: 30px; text-align: center; line-height: 30px">
+                                TailwindCSS
+                            </div>
+                        </div>
                     </div>
 
                     <!-- subscribe -->

@@ -4,7 +4,7 @@ body{
 }
 /* 뉴스 피드 */
 .section .slidewrap {
-    max-width: 870px;
+    max-width: 12800px;
     margin: 0 auto;
     overflow: hidden;
     position: relative;
@@ -131,3 +131,37 @@ input[id="menuicon"]:checked + label span:nth-child(3){
     transform: translateY(50%) rotate(-45deg);
 }
 /* 아이콘 */
+/*선택폴더*/
+input[type="radio"]{display: none;}
+input[type="radio"] + label {
+    display: inline-block;
+    padding: 20px;
+    background: rgb(155, 152, 152);
+    color: rgb(78, 74, 74);
+    font-size: 14px;
+    cursor: pointer;
+    width: 169px;
+    margin: 0;
+    border: solid  black;
+    border-width: 1px 1px 0px 1px ;
+    border-radius: 7px 20px 0 0;
+}
+input[type="radio"]:checked + label {
+    background: rgb(255, 255, 255); color: rgb(0, 0, 0);
+}
+.conbox {
+    width: 868px;
+    height: 839px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+    display: none;
+    color: rgb(0, 0, 0);
+    border: solid  black;
+    border-width: 0px 1px 1px 1px ;
+}
+input[id="tab01"]:checked ~ .con1 {display: block;}
+input[id="tab02"]:checked ~ .con2 {display: block;}
+input[id="tab03"]:checked ~ .con3 {display: block;}
+input[id="tab04"]:checked ~ .con2 {display: block;}
+input[id="tab05"]:checked ~ .con3 {display: block;}
+/*선택폴더*/
