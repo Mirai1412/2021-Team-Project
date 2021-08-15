@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    height: 1600px;
 }
 .title {
     display: flex;
@@ -10,12 +11,16 @@ body {
     line-height: 50px;
 }
 .none {
-    width: 1000px;
+   
 }
-.link {
+.linkbox {
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+}
+.link{
     font-size: 40px;
     color: rgb(255, 255, 255);
-    margin: 0 5px;
 }
 .logo {
     font-size: 25px;
@@ -40,8 +45,8 @@ body {
     vertical-align: middle;
     width: 100%;
     transition: all 0.5s;
-
 }
+
 .section .slidelist > li > a {
     display: block;
 }
@@ -88,5 +93,42 @@ body {
 .section [id="slide03"]:checked ~ .slidewrap .control03 {
     display: block;
 }
-
 /* 뉴스 피드 */
+.mainbox{
+    border: solid 1px black;
+    height: 300px;
+    width: 100%;
+    position: relative;
+}
+.buttonbox{
+    border: solid 1px black;
+    height: 300px;
+    width: 100%;
+}
+.endbox{
+    border: solid 1px black;
+    height: 300px;
+    width: 100%;
+}
+.Laravel{
+    margin: 5px;
+    border: solid 1px black;
+    height: 40%;
+    width: 50%;
+}
+
+.php{
+    margin: 5px;
+    border: solid 1px black;
+    height: 40%;
+    width: 50%;
+}
+.profile{
+    position: absolute;
+    margin: 5px;
+    border: solid 1px black;
+    height: 60%;
+    width: 30%;
+    right: 20px;
+    top: 5px;
+}
