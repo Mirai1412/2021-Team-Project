@@ -7,20 +7,13 @@ body {
     padding: 10px 50px;
     background-color: #263343;
     justify-content: space-between;
-    height: 50px;
+    height: 80px;
     line-height: 50px;
-}
-.none {
-   
 }
 .linkbox {
     display: flex;
     width: 165px;
     justify-content: space-between;
-}
-.link{
-    font-size: 40px;
-    color: rgb(255, 255, 255);
 }
 .logo {
     font-size: 25px;
@@ -32,7 +25,7 @@ body {
     margin: 0 auto;
     overflow: hidden;
     position: relative;
-    height: 500px;
+    height: 400px;
 }
 .section .slidelist {
     white-space: nowrap;
@@ -97,7 +90,7 @@ body {
 .mainbox{
     padding: 30px 0 0 10px;
     border: solid 1px black;
-    height: 450px;
+    height: 800px;
     width: 100%;
     position: relative;
 }
@@ -108,49 +101,164 @@ body {
     background: linear-gradient(to right, #232526,#414345); 
     padding: 0 10px;
     color: white;
-}
-
-.endbox{
-    border: solid 1px black;
-    height: 300px;
-    width: 100%;
+    display: flex;
+    position: relative;
 }
 .Laravel{
+    position: absolute;
+    right: 25px;
+    top: 20px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
     height: 23%;
-    width: 50%;
+    width: 40%;
     border-radius:0.5em;
     background: linear-gradient(to left, #dd1818,#1f1e1e); 
 }
 .HTML{
+    position: absolute;
+    right: 25px;
+    top: 480px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
     height: 23%;
-    width: 50%;
+    width: 40%;
     border-radius:0.5em;
-    background: linear-gradient(to right, #20002c,#bc92cc); 
+    background: linear-gradient(to right, #00416A,#E4E5E6); 
 }
 .php{
+    position: absolute;
+    right: 25px;
+    top: 250px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
     height: 23%;
-    width: 50%;
+    width: 40%;
     border-radius:0.5em;
     background: linear-gradient(to right, #20002c,#bc92cc); 
 }
-.profile{
+.Java{
     position: absolute;
+    right: 25px;
+    top: 700px;
+    padding: 10px;
+    color: white;
     margin: 5px;
     border: solid 1px black;
-    height: 60%;
+    height: 23%;
+    width: 40%;
+    border-radius:0.5em;
+    background: linear-gradient(to right, #20002c,#bc92cc); 
+}
+
+.post{
+    position: absolute;
+    margin: 0;
+    border: solid 1px black;
+    height: 90%;
+    width: 47%;
+    left: 25px;
+    top: 25px;
+}
+.section{
+    position: relative;
+    height: 400px;
+}
+.section [id="slide01"]{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 48%;
+}
+.section [id="slide02"]{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 50%;
+}
+.section [id="slide03"]{
+    position: absolute;
+    z-index: 1;
+    bottom: 10px;
+    left: 52%;
+}
+.abcbox{
+    display: flex;
+    flex-wrap: wrap; 
+    width: 370px;
+    height: 80px;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+}
+.buttontitle{
     width: 30%;
-    right: 25px;
-    top: 30px;
+    height: 80%;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.abcbox h1{
+    width: 50px;
+    height: 50px;
+    padding: 0;
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+    line-height: 50px;
+}
+.endbox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.endtitle{
+    width: 100%;
+    display: flex;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+.endtitle p{
+    display: inline;
+    width: 160px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 19px;
+    padding: 5px 18px;
+}
+.endp{
+    width: 51%;
+}
+.endmain{
+    width: 50%;
+    margin: 0 0 0 50px;
+    
+}
+.endtime{
+    width: 40%;
+    
+}
+ul{
+    list-style:none;
+    padding: 0;
+}
+
+.link{
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+}
+.endlink{
+    width: 40%;
+    text-align: left;
+}
+.endlink i {
+    width: 200px;
 }
