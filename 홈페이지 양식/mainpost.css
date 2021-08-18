@@ -1,14 +1,15 @@
 body {
-    margin: 0;
+    max-width: 1200px;
+    margin: 0 auto;
     height: 1600px;
 }
 .title {
     display: flex;
-    padding: 10px 50px;
+    padding: 10px 30px;
     background-color: #263343;
     justify-content: space-between;
-    height: 80px;
-    line-height: 50px;
+    height: 60px;
+    line-height: 60px;
 }
 .linkbox {
     display: flex;
@@ -88,84 +89,72 @@ body {
 }
 /* 뉴스 피드 */
 .mainbox{
-    padding: 30px 0 0 10px;
-    border: solid 1px black;
-    height: 800px;
+    height: 760px;
     width: 100%;
     position: relative;
 }
 .buttonbox{
-    border: solid 1px black;
-    height: 300px;
+    height: 280px;
     width: 100%;
     background: linear-gradient(to right, #232526,#414345); 
-    padding: 0 10px;
     color: white;
     display: flex;
     position: relative;
 }
 .Laravel{
     position: absolute;
-    right: 25px;
+    right: 0px;
     top: 20px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
-    height: 23%;
+    height: 15%;
     width: 40%;
     border-radius:0.5em;
     background: linear-gradient(to left, #dd1818,#1f1e1e); 
 }
 .HTML{
     position: absolute;
-    right: 25px;
-    top: 480px;
+    right: 0px;
+    top: 380px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
-    height: 23%;
+    height: 15%;
     width: 40%;
     border-radius:0.5em;
     background: linear-gradient(to right, #00416A,#E4E5E6); 
 }
 .php{
     position: absolute;
-    right: 25px;
-    top: 250px;
+    right: 0px;
+    top: 200px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
-    height: 23%;
+    height: 15%;
     width: 40%;
     border-radius:0.5em;
     background: linear-gradient(to right, #20002c,#bc92cc); 
 }
 .Java{
     position: absolute;
-    right: 25px;
-    top: 700px;
+    right: 0px;
+    top: 560px;
     padding: 10px;
     color: white;
     margin: 5px;
     border: solid 1px black;
-    height: 23%;
+    height: 15%;
     width: 40%;
     border-radius:0.5em;
-    background: linear-gradient(to right, #20002c,#bc92cc); 
+    background: linear-gradient(to right, #2c3e50,#bdc3c7); 
 }
 
-.post{
-    position: absolute;
-    margin: 0;
-    border: solid 1px black;
-    height: 90%;
-    width: 47%;
-    left: 25px;
-    top: 25px;
-}
+
 .section{
     position: relative;
     height: 400px;
@@ -222,28 +211,31 @@ body {
 .endtitle{
     width: 100%;
     display: flex;
-    margin-top: 30px;
-    margin-left: 30px;
+    flex-wrap: wrap; 
+    margin-top: 20px;
+    margin-left: 10px;
 }
 .endtitle p{
     display: inline;
-    width: 160px;
+    width: 150px;
     height: 50px;
     text-align: center;
     line-height: 50px;
-    font-size: 19px;
-    padding: 5px 18px;
+    font-size: 16px;
+    padding: 5px 5px 0 0;
 }
 .endp{
-    width: 51%;
+    width: 650px;
+    margin: 0;
+    padding: 0;
 }
 .endmain{
-    width: 50%;
-    margin: 0 0 0 50px;
+    width: 670px;
+    margin: 0 0 0 10px;
     
 }
 .endtime{
-    width: 40%;
+    width: 500px;
     
 }
 ul{
@@ -251,14 +243,76 @@ ul{
     padding: 0;
 }
 
-.link{
-    font-size: 40px;
-    color: rgb(0, 0, 0);
-}
 .endlink{
-    width: 40%;
+    width: 510px;
     text-align: left;
+    line-height: 60px;
+    display: flex;
 }
 .endlink i {
-    width: 200px;
+    width: 30px;
+    text-align: center;
+    font-size: 30px;
+    margin: 0 0 0 20px;
+}
+.endlink p {
+    padding:  0 30px 0  5px;
+}
+.face{
+    width: 170px;
+    margin: 0;
+    height: 60px;
+}
+.in{
+    width: 180px;
+    margin: 0;
+    height: 60px;
+}
+.tw{
+    width: 170px;
+    margin: 0;
+    height: 60px;
+}
+.login{
+    width: 20%;
+
+}
+
+.login p{
+    color: white;
+    margin: 0 10px 0 0;
+    text-align: right;
+}
+/* 아이콘 */
+.post{
+    position: absolute;
+    margin: 0;
+    border: solid 1px black;
+    height: 90%;
+    width: 53%;
+    left: 0px;
+    top: 25px;
+    display: flex;
+    flex-wrap: wrap; 
+}
+.post h1{
+    width: 40%;
+    height: 60px;
+    padding: 0 0 0 20px;
+    line-height: 60px;
+}
+.post h2{
+    width: 52%;
+    height: 60px;
+    line-height: 60px;
+    text-align: right;
+}
+.content{
+    width: 100%;
+    height: 60px;
+    border: solid 1px black;
+    display: flex;
+}
+.content p {
+    margin: 0 10px;
 }
