@@ -225,12 +225,15 @@ body {
     padding: 5px 5px 0 0;
 }
 .endp{
-    width: 650px;
+    width: 660px;
     margin: 0;
     padding: 0;
 }
+.endp p{
+    font-weight:bold;
+}
 .endmain{
-    width: 670px;
+    width: 680px;
     margin: 0 0 0 10px;
     
 }
@@ -287,32 +290,119 @@ ul{
 .post{
     position: absolute;
     margin: 0;
-    border: solid 1px black;
-    height: 90%;
+
     width: 53%;
     left: 0px;
     top: 25px;
     display: flex;
     flex-wrap: wrap; 
 }
-.post h1{
-    width: 40%;
+.posttitle{
+    width: 20%;
     height: 60px;
     padding: 0 0 0 20px;
     line-height: 60px;
+    color: #000000;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+    margin:  21px 0 21.21px 0;
 }
-.post h2{
-    width: 52%;
+.mainlan{
     height: 60px;
+    margin:  21px 0 21.21px 20px;
+    padding: 0 0 0 10px;
     line-height: 60px;
-    text-align: right;
+    color: #000000;
+    border-top: 3px solid #000000;
+    border-bottom: 3px solid #000000;
+}
+
+.input1{
+    width: 200px;
+    height: 30px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 3px solid black;
+}
+.input2{
+    width: 50px;
+    height: 36px;
+    border-top: 1px solid black;
+    border-left: none;
+    border-right: 1px solid black;
+    border-bottom: 3px solid black;
+    padding: 0 0 0 0;
+}
+.search{
+    width: 270px;
+    height: 58px;
+    margin: 50px 0 0 80px;
+    display: flex;
 }
 .content{
     width: 100%;
-    height: 60px;
-    border: solid 1px black;
+    height: 40px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 2px solid rgba(124, 124, 124, 0.596);
     display: flex;
+    flex-wrap: wrap; 
+
 }
-.content p {
-    margin: 0 10px;
+.contitle{
+    width: 150px;
+    text-align: left;
+    margin: 0 0 0 10px;
+    height: 40px;
+}
+
+.subtitle{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid rgba(93, 93, 93, 0.596);
+}
+.content p{
+    line-height: 40px;
+    margin: 0;
+}
+.nub{
+    width: 300px;
+    padding: 0 50px 0 0;
+    text-align: right;
+}
+.day{
+    width: 120px;
+}
+.nubtitle{
+    width: 340px;
+    padding: 0 50px 0 0;
+    text-align: right;
+}
+.today{
+    width: 120px;
+}
+.subtitle p{
+    line-height: 40px;
+    margin: 0;
+}
+.subtitle{
+    width: 100%;
+    height: 40px;
+    display: flex;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 3px solid rgba(93, 93, 93, 0.596);
+}
+.subposttitle{
+    width: 150px;
+    text-align: left;
+    height: 40px;
+    padding: 0 0 0 10px;
 }
