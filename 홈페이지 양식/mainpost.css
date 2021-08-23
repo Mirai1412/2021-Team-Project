@@ -466,8 +466,39 @@ input[id*="popup"]:checked + label + div {
 }
 .tas{
     position: absolute;
-    top: 100px;
+    top: 120px;
     left: 150px;
+    color: white;
+}
+.tas2{
+    position: absolute;
+    top: 120px;
+    left: 350px;
+    color: white;
+}
+.tas3{
+    position: absolute;
+    top: 120px;
+    left: 580px;
+    color: white;
+}
+.tas4{
+    position: absolute;
+    top: 120px;
+    left: 800px;
+    color: white;
+}
+.tas5{
+    position: absolute;
+    top: 120px;
+    left: 1000px;
+    color: white;
+}
+.tas6{
+    position: absolute;
+    top: 120px;
+    left: 1250px;
+    color: white;
 }
 /*팝업*/
 .up a{
