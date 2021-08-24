@@ -11,6 +11,10 @@ body {
     height: 60px;
     line-height: 60px;
 }
+.title a{
+    color: white;
+    text-decoration: none;
+}
 .linkbox {
     display: flex;
     width: 165px;
@@ -423,7 +427,7 @@ input[id*="popup"] + label + div > div{
     left: 50%;
     transform: translate(-50%,-50%);
     width: 90%;
-    height: 500px;
+    height: 70%;
     border: 1px solid white;
     z-index: 2;
 }
@@ -466,37 +470,37 @@ input[id*="popup"]:checked + label + div {
 }
 .tas{
     position: absolute;
-    top: 120px;
+    top: 17%;
     left: 150px;
     color: white;
 }
 .tas2{
     position: absolute;
-    top: 120px;
+    top: 17%;
     left: 350px;
     color: white;
 }
 .tas3{
     position: absolute;
-    top: 120px;
+    top: 17%;
     left: 580px;
     color: white;
 }
 .tas4{
     position: absolute;
-    top: 120px;
+    top: 17%;
     left: 800px;
     color: white;
 }
 .tas5{
     position: absolute;
-    top: 120px;
+    top: 17%;
     left: 1000px;
     color: white;
 }
 .tas6{
     position: absolute;
-    top: 120px;
+    top: 17%;
     left: 1250px;
     color: white;
 }
