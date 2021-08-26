@@ -36,7 +36,6 @@ body{
     top: 50%;
     transform: translateY(-50%);
     padding: 25px;
-    cursor: pointer;
 }
 .section .slidelist .left {
     left: 10px;
@@ -96,7 +95,6 @@ input[id="menuicon"] + label {
     width: 35px;
     height: 35px;
     position: relative;
-    cursor: pointer;
     margin: 0 0 0 30px;
     padding: 3px;
 }
@@ -139,7 +137,6 @@ input[type="radio"] + label {
     background: rgb(155, 152, 152);
     color: rgb(78, 74, 74);
     font-size: 14px;
-    cursor: pointer;
     width: 169px;
     margin: 0;
     border: solid  black;
