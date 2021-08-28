@@ -301,3 +301,9 @@ ul{
     list-style:none;
     padding: 0;
 }
+.Qlan{
+ border: 1px solid black;
+ font-size: 30px;
+ display: flex; 
+ flex-wrap: wrap;   
+}
