@@ -2,9 +2,9 @@
     <div class="title" style="border: solid 1px black;">
         <div class="logo">
             <i class="fas fa-chess-rook">
-                <a href="">
+                <h2>
                     Code Finder
-                </a>
+                </h2>
             </i>
         </div>
         <div class="none"></div>
@@ -21,7 +21,7 @@
                     <label for="popup">
                         <div class="tas">
                             <ul>
-                                <li style="font-size: 20px;">고객지원</li>
+                                <li style="font-size: 23px;">고객지원</li>
                                 <li>고객센터안내</li>
                                 <li>고객센터 FAQ</li>
                                 <li>통합문의</li>
@@ -33,7 +33,7 @@
                         </div>
                         <div class="tas2">
                             <ul>
-                                <li style="font-size: 20px;">Code Finder 소개</li>
+                                <li style="font-size: 23px;">Code Finder 소개</li>
                                 <li>회사소개</li>
                                 <li>보도자료</li>
                                 <li>협력업체모집</li>
@@ -41,7 +41,7 @@
                         </div>
                         <div class="tas3">
                             <ul>
-                                <li style="font-size: 20px;">마이페이지</li>
+                                <li style="font-size: 23px;">마이페이지</li>
                                 <li>글작성목록</li>
                                 <li>나의 문의내역</li>
                                 <li>정보수정</li>
@@ -51,7 +51,7 @@
                         </div>
                         <div class="tas4">
                             <ul>
-                                <li style="font-size: 20px;">채용정보</li>
+                                <li style="font-size: 23px;">채용정보</li>
                                 <li>인사제도</li>
                                 <li>채용공고</li>
                                 <li>입사지원</li>
@@ -59,7 +59,7 @@
                         </div>
                         <div class="tas5">
                             <ul>
-                                <li style="font-size: 20px;">회원서비스</li>
+                                <li style="font-size: 23px;">회원서비스</li>
                                 <li>로그인</li>
                                 <li>아이디/비밀번호 찾기</li>
                                 <li>회원가입</li>
@@ -67,7 +67,7 @@
                         </div>
                         <div class="tas6">
                             <ul>
-                                <li style="font-size: 20px;">기타 서비스</li>
+                                <li style="font-size: 23px;">기타 서비스</li>
                                 <li>사이트 이용약관</li>
                                 <li>개인정보 처리방침</li>
                                 <li>사이트 운영&관리방침</li>
@@ -92,19 +92,18 @@ export default {
         body {
             max-width: 1200px;
             margin: 0 auto;
-            height: 1600px;
         }
         .title {
             display: flex;
             padding: 10px 30px;
             background-color: #263343;
             justify-content: space-between;
-            height: 60px;
-            line-height: 60px;
+            height: 80px;
+            line-height: 80px;
         }
-        .title a {
+        .title h2 {
+            line-height: 55px;
             color: white;
-            text-decoration: none;
         }
         .linkbox {
             display: flex;
@@ -183,43 +182,46 @@ input[id*="popup"]:checked + label + div {
 }
 .tas{
     position: absolute;
-    top: 17%;
-    left: 150px;
+    top: 19%;
+    left: 6%;
     color: white;
 }
 .tas2{
     position: absolute;
-    top: 17%;
-    left: 350px;
+    top: 19%;
+    left: 18%;
     color: white;
 }
 .tas3{
     position: absolute;
-    top: 17%;
-    left: 580px;
+    top: 19%;
+    left: 34%;
     color: white;
 }
 .tas4{
     position: absolute;
-    top: 17%;
-    left: 800px;
+    top: 19%;
+    left: 49%;
     color: white;
 }
 .tas5{
     position: absolute;
-    top: 17%;
-    left: 1000px;
+    top: 19%;
+    left: 62%;
     color: white;
 }
 .tas6{
     position: absolute;
-    top: 17%;
-    left: 1250px;
+    top: 19%;
+    left: 78%;
     color: white;
 }
 /*팝업*/
 ul{
     list-style:none;
-    padding: 0;
+}
+li{
+    margin: 13px 0;
+    font-size: 15px;
 }
 </style>

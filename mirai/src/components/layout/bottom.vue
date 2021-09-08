@@ -64,7 +64,10 @@
 </script>
 <style>
 .endbox{
-    height: 100%;
+    border: 1px solid black;
+    background: rgba(214, 214, 214, 0.438);
+}
+.endbox{
     width: 100%;
     display: flex;
     flex-wrap: wrap; 
@@ -72,6 +75,7 @@
 }
 .endtitle{
     width: 100%;
+    height: 100px;
     display: flex;
     flex-wrap: wrap; 
     margin-top: 20px;
@@ -87,12 +91,12 @@
     padding: 5px 5px 0 0;
 }
 .endp{
-    width: 660px;
-    margin: 0;
-    padding: 0;
+    width: 59%;
+
 }
 .endp p{
     font-weight:bold;
+    margin: 0 5px;
 }
 .endmain{
     width: 680px;
@@ -100,25 +104,24 @@
 }
 .endtime{
     width: 500px;
-    
 }
+
 ul{
     list-style:none;
     padding: 0;
 }
 .endlink{
-    width: 510px;
+    width: 40%;
     text-align: left;
     line-height: 60px;
     display: flex;
 }
-.endlink i {
-    width: 30px;
-    text-align: center;
-    font-size: 30px;
-    margin: 0 0 0 20px;
-}
 .endlink p {
+    width: 30%;
     padding:  0 30px 0  5px;
+}
+h2{
+    padding: 0 0 0 20px;
+    margin:  0 0 10px 0;
 }
 </style>
