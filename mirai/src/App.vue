@@ -14,7 +14,8 @@
     import Home from './components/Home.vue';
     import Header from '@/components/layout/Header.vue';
     import Bottom from './components/layout/bottom.vue';
-    
+
+
     export default {
 
         name: 'App',

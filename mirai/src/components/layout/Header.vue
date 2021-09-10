@@ -88,34 +88,34 @@ export default {
     name: "header"
         };
 </script>
-<style>
-        body {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .title {
-            display: flex;
-            padding: 10px 30px;
-            background-color: #263343;
-            justify-content: space-between;
-            height: 80px;
-            line-height: 80px;
-        }
-        .title h2 {
-            line-height: 55px;
-            color: white;
-        }
-        .linkbox {
-            display: flex;
-            width: 165px;
-            justify-content: space-between;
-        }
-        .logo {
-            font-size: 25px;
-            color: rgb(255, 255, 255);
-        }
-        /*팝업*/
-input[id*="popup"]{
+<style > 
+body {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.title {
+    display: flex;
+    padding: 10px 30px;
+    background-color: #263343;
+    justify-content: space-between;
+    height: 80px;
+    line-height: 80px;
+}
+.title h2 {
+    line-height: 55px;
+    color: white;
+}
+.linkbox {
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+}
+.logo {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+}
+/*팝업*/
+input[id*="popup"] {
     display: none;
 }
 input[id*="popup"] + label {
@@ -133,7 +133,7 @@ input[id*="popup"] + label + div {
     height: 100%;
     z-index: 100;
 }
-input[id*="popup"] + label + div > div{
+input[id*="popup"] + label + div > div {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -145,24 +145,23 @@ input[id*="popup"] + label + div > div{
 }
 input[id*="popup"] + label + div > div > label {
     position: absolute;
-    top: 0%;
-    right: 0%;
+    top: 0;
+    right: 0;
     transform: translate(40%, -40%);
     z-index: 1;
     width: 10px;
     height: 10px;
     line-height: 10px;
 }
-input[id*="popup"] + label + div > div > label >h1{
-    margin: 0 0 0 0;
+input[id*="popup"] + label + div > div > label > h1 {
+    margin: 0;
     position: absolute;
     top: 20px;
     right: 15px;
     color: white;
     font-size: 30px;
 }
-
-input[id*="popup"] + label + div > label  {
+input[id*="popup"] + label + div > label {
     position: absolute;
     top: 0;
     left: 0;
@@ -171,8 +170,8 @@ input[id*="popup"] + label + div > label  {
     background: rgba(0, 0, 0, 0.829);
     z-index: 1;
 }
-input[id*="popup"] + label + div{
-    opacity: 0; 
+input[id*="popup"] + label + div {
+    opacity: 0;
     visibility: hidden;
     transition: all 1s;
 }
@@ -180,47 +179,47 @@ input[id*="popup"]:checked + label + div {
     opacity: 1;
     visibility: visible;
 }
-.tas{
+.tas {
     position: absolute;
     top: 19%;
     left: 6%;
     color: white;
 }
-.tas2{
+.tas2 {
     position: absolute;
     top: 19%;
     left: 18%;
     color: white;
 }
-.tas3{
+.tas3 {
     position: absolute;
     top: 19%;
     left: 34%;
     color: white;
 }
-.tas4{
+.tas4 {
     position: absolute;
     top: 19%;
     left: 49%;
     color: white;
 }
-.tas5{
+.tas5 {
     position: absolute;
     top: 19%;
     left: 62%;
     color: white;
 }
-.tas6{
+.tas6 {
     position: absolute;
     top: 19%;
     left: 78%;
     color: white;
 }
 /*팝업*/
-ul{
-    list-style:none;
+ul {
+    list-style: none;
 }
-li{
+li {
     margin: 13px 0;
     font-size: 15px;
 }
