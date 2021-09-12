@@ -86,27 +86,25 @@
 <script>
     export default {name: "bottom"};
 </script>
-<style>
-    .endbox {
-
-        background: rgba(233, 233, 233, 0.753);
-        margin: 0 0 50px 0;
-    }
-    .endbox {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        text-align: left;
-    }
-    .endtitle {
-        width: 100%;
-        height: 100px;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 20px;
-        margin-left: 10px;
-    }
-    .endtitle p {
+<style lang="scss" > 
+.endbox {
+    background: rgba(255, 255, 255, 0.753);
+    margin: 0 0 50px;
+}
+.endbox {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+}
+.endtitle {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    margin-left: 10px;
+    p {
         display: inline;
         width: 150px;
         height: 50px;
@@ -115,65 +113,68 @@
         font-size: 16px;
         padding: 5px 5px 0 0;
     }
-    .endp {
-        width: 59%;
+}
 
-    }
-    .endp p {
+.endp {
+    width: 59%;
+    p {
         font-weight: bold;
         margin: 0 5px;
     }
-    .endmain {
-        width: 680px;
-        margin: 0 0 0 10px;
-    }
-    .endtime {
-        width: 500px;
-    }
+}
 
-    ul {
-        list-style: none;
-        padding: 0;
-    }
-    .endlink {
-        width: 40%;
-        text-align: left;
-        line-height: 60px;
-        display: flex;
-    }
-    .endlink p {
+.endmain {
+    width: 680px;
+    margin: 0 0 0 0px;
+}
+.endtime {
+    width: 500px;
+    margin: 0 0 0 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+.endlink {
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    display: flex;
+    p {
         width: 30%;
         padding: 0 30px 0 5px;
     }
-    h2 {
-        padding: 0 0 0 20px;
-        margin: 0 0 10px;
-    }
-    .buttonbox {
-        height: 280px;
-        width: 100%;
-        background: linear-gradient(to right, #232526,#414345);
-        color: white;
-        display: flex;
-        position: relative;
-    }
-    .buttontitle {
-        width: 30%;
-        height: 80%;
-        position: absolute;
-        top: 40px;
-        left: 30px;
-    }
-    .abcbox {
-        display: flex;
-        flex-wrap: wrap;
-        width: 370px;
-        height: 80px;
-        position: absolute;
-        right: 50px;
-        top: 60px;
-    }
-    .abcbox h1 {
+}
+
+h2 {
+    padding: 0 0 0 20px;
+    margin: 0 0 10px;
+}
+.buttonbox {
+    height: 280px;
+    width: 100%;
+    background: linear-gradient(to right, #232526,#414345);
+    color: white;
+    display: flex;
+    position: relative;
+}
+.buttontitle {
+    width: 30%;
+    height: 80%;
+    position: absolute;
+    top: 40px;
+    left: 30px;
+}
+.abcbox {
+    display: flex;
+    flex-wrap: wrap;
+    width: 370px;
+    height: 80px;
+    position: absolute;
+    right: 50px;
+    top: 60px;
+    h1 {
         width: 50px;
         height: 50px;
         padding: 0;
@@ -182,4 +183,6 @@
         text-align: center;
         line-height: 50px;
     }
+}
+
 </style>

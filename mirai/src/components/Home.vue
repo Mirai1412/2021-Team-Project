@@ -1,181 +1,132 @@
 <template>
     <div class="main">
 
-<div class="mainlan">
-    <v-card class="overflow-hidden">
-        <v-app-bar
-            absolute="absolute"
-            color="#6A76AB"
-            dark="dark"
-            height="0px"
-            shrink-on-scroll="shrink-on-scroll"
-            prominent="prominent"
-            src="https://picsum.photos/1920/1080?random"
-            fade-img-on-scroll="fade-img-on-scroll"
-            scroll-target="#scrolling-techniques-3">
-            <template v-slot:img="{ props }">
-                <v-img
-                    v-bind="props"
-                    gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"></v-img>
-            </template>
+        <v-card class="overflow-hidden">
+   
+            <v-app-bar
+                absolute="absolute"
+                color="#6A76AB"
+                dark="dark"
+                height="20px"
+                shrink-on-scroll="shrink-on-scroll"
+                prominent="prominent"
+                src="https://picsum.photos/1920/1080?random"
+                fade-img-on-scroll="fade-img-on-scroll"
+                scroll-target="#scrolling-techniques-3">
+                <template v-slot:img="{ props }">
+                    <v-img
+                        v-bind="props"
+                        gradient="to top right, rgba(100,115,201,.7), rgba(25,32,72,.7)"></v-img>
+                </template>
+
+                <h1 class="titleh1">Post</h1>
 
                 <template v-slot:extension>
-                <v-tabs align-with-title="align-with-title">
-                    <v-tab>HTML&CSS</v-tab>
-                    <v-tab>Laravel</v-tab>
-                    <v-tab>JAVA</v-tab>
-                </v-tabs>
-            </template>
-        </v-app-bar>
-        <v-sheet id="scrolling-techniques-3" class="overflow-y-auto" max-height="600">
-            <v-container style="height: 1000px;"></v-container>
-        </v-sheet>
-    </v-card>
-</div>
-
-
-        <div class="con1">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-                <template slot="progress">
-                    <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate="indeterminate"></v-progress-linear>
+                    <v-tabs align-with-title="align-with-title">
+                        <v-tab>HTML&CSS</v-tab>
+                        <v-tab>Laravel</v-tab>
+                        <v-tab>JAVA</v-tab>
+                        <v-tab>PHP</v-tab>
+                    </v-tabs>
                 </template>
+            </v-app-bar>
 
-                <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
 
-                <v-card-title>오류해결해주세요!!</v-card-title>
+            <v-sheet id="scrolling-techniques-3" class="overflow-y-auto" max-height="600">
+                <v-container style="height: 116px;"></v-container>
+            </v-sheet>
 
-                <v-card-text>
-                    <v-row align="center" class="mx-0">
-                        <v-rating
-                            :value="2.5"
-                            color="amber"
-                            dense="dense"
-                            half-increments="half-increments"
-                            readonly="readonly"
-                            size="14"></v-rating>
+        </v-card>
 
-                        <div class="grey--text ms-4">
-                            50% (3명 응답)
-                        </div>
-                    </v-row>
-
-                    <div class="my-4 text-subtitle-1">
-                        임채환
-                    </div>
-
-                    <div>서버에서 자꾸 충돌이 일어나서 VsCode가 켜지지 않습니다.ㅠㅅㅠ.</div>
-                </v-card-text>
-
-                <v-divider class="mx-4"></v-divider>
-
-                <v-card-title>HTML&CSS</v-card-title>
-                <v-card-actions>
-                    <v-btn color="deep-purple lighten-2" text="text" @click="reserve">
-                        해결해주기
-                    </v-btn>
-                </v-card-actions>
-            </v-card>
-        </div>
-        <div class="con1">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-                <template slot="progress">
-                    <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate="indeterminate"></v-progress-linear>
+        <div class="post">
+            <v-simple-table>
+                <template v-slot:default>
+                    <thead>
+                        <tr>
+                            <th class="text-left" style="padding:  0 0 0 50px;">
+                                제목
+                            </th>
+                            <th class="text-left" style="padding:  0 0 0 10px;">
+                                작성자
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr v-for="item in desserts" :key="item.name">
+                            <td style="padding:  0 0 0 50px;">{{ item.name }}</td>
+                            <td>{{ item.calories }}</td>
+                        </tr>
+                    </tbody>
                 </template>
-
-                <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
-
-                <v-card-title>오류해결해주세요!!</v-card-title>
-
-                <v-card-text>
-                    <v-row align="center" class="mx-0">
-                        <v-rating
-                            :value="4.5"
-                            color="amber"
-                            dense="dense"
-                            half-increments="half-increments"
-                            readonly="readonly"
-                            size="14"></v-rating>
-
-                        <div class="grey--text ms-4">
-                            4.5 (413)
-                        </div>
-                    </v-row>
-
-                    <div class="my-4 text-subtitle-1">
-                        임채환
-                    </div>
-
-                    <div>서버에서 자꾸 충돌이 일어나서 VsCode가 켜지지 않습니다.ㅠㅅㅠ.</div>
-                </v-card-text>
-
-                <v-divider class="mx-4"></v-divider>
-
-                <v-card-title>HTML&CSS</v-card-title>
-                <v-card-actions>
-                    <v-btn color="deep-purple lighten-2" text="text" @click="reserve">
-                        해결해주기
-                    </v-btn>
-                </v-card-actions>
-            </v-card>
+            </v-simple-table>
         </div>
-        <div class="con1">
-            <v-card :loading="loading" class="mx-auto my-12" max-width="374">
-                <template slot="progress">
-                    <v-progress-linear
-                        color="deep-purple"
-                        height="10"
-                        indeterminate="indeterminate"></v-progress-linear>
-                </template>
 
-                <v-img height="250" src="https://cdn.vuetifyjs.com/images/cards/cooking.png"></v-img>
-
-                <v-card-title>오류해결해주세요!!</v-card-title>
-
-                <v-card-text>
-                    <v-row align="center" class="mx-0">
-                        <v-rating
-                            :value="4.5"
-                            color="amber"
-                            dense="dense"
-                            half-increments="half-increments"
-                            readonly="readonly"
-                            size="14"></v-rating>
-
-                        <div class="grey--text ms-4">
-                            4.5 (413)
-                        </div>
-                    </v-row>
-
-                    <div class="my-4 text-subtitle-1">
-                        임채환
-                    </div>
-
-                    <div>서버에서 자꾸 충돌이 일어나서 VsCode가 켜지지 않습니다.ㅠㅅㅠ.</div>
-                </v-card-text>
-
-                <v-divider class="mx-4"></v-divider>
-
-                <v-card-title>HTML&CSS</v-card-title>
-                <v-card-actions>
-                    <v-btn color="deep-purple lighten-2" text="text" @click="reserve">
-                        해결해주기
-                    </v-btn>
-                </v-card-actions>
-            </v-card>
+        <div class="img"  style="height: 300px;">
+            <v-carousel hide-delimiters="hide-delimiters"  style="height: 300px;">
+                <v-carousel-item  v-for="(item,i) in items" :key="i" :src="item.src"></v-carousel-item>
+            </v-carousel>
         </div>
+
     </div>
 </template>
-
 <script>
     export default {
         name: 'Home',
-        data: () => ({loading: false, selection: 1}),
+        data: () => ({
+       items: [
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/squirrel.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/sky.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/bird.jpg',
+          },
+          {
+            src: 'https://cdn.vuetifyjs.com/images/carousel/planet.jpg',
+          },
+        ],
+                desserts: [
+          {
+            name: 'Frozen Yogurt',
+            calories: 159,
+          },
+          {
+            name: 'Ice cream sandwich',
+            calories: 237,
+          },
+          {
+            name: 'Eclair',
+            calories: 262,
+          },
+          {
+            name: 'Cupcake',
+            calories: 305,
+          },
+          {
+            name: 'Gingerbread',
+            calories: 356,
+          },
+          {
+            name: 'Jelly bean',
+            calories: 375,
+          },
+          {
+            name: 'Lollipop',
+            calories: 392,
+          },
+          {
+            name: 'Honeycomb',
+            calories: 408,
+          },
+          {
+            name: 'Donut',
+            calories: 452,
+          },
+
+        ],
+            }),
 
         methods: {
             reserve() {
@@ -186,20 +137,10 @@
         }
     }
 </script>
-<style>
-    .main {
-        border: 1px solid black;
-        height: 750px;
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .mainlan{
-    border: 1px solid black;
-    width: 100%;
-    height: 100px;
-    }
-    .con1{
-      width: 25%;
-      margin: 10px;
+<style lang="scss">
+    .post {
+        border: 1px solid rgba(179, 179, 179, 0.657);
+        border-top : none;
+
     }
 </style>
