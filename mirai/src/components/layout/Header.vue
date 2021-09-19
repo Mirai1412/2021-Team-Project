@@ -1,53 +1,21 @@
 <template>
-<div class="mainlan">
-    <div class="toptitle">
-        <p>로그인</p>
-        <p>회원가입</p>
-        <p>후원</p>
-        <p>도움말</p>
+    <div class="header">
+        <img src='../image/cd.png' class="cd">
+            <div class="leftheader">
+                <div class="saerch">
+                    <input type="text" class="ser" placeholder="SEARCH...">
+                    <button>검색</button>
+                </div>
+                <div class="menu">
+                  <p>BLOG</p>
+                  <p>PODCAST</p>
+                  <p>ABOUT</p>
+                  <p>CONTACT</p>
+                </div>
+
+            </div>
+
     </div>
-
-    <div class="topbar">
-  <v-toolbar
-    color="blue"
-    dark
-  >
-    <v-toolbar-title><router-link to="/creat" style="text-decoration: none; color: White">HOME</router-link></v-toolbar-title>
-
-    <v-divider
-      class="mx-4"
-      vertical
-    ></v-divider>
-
-    <span class="subheading" style="font-size: 28px;"  >CodeFinder</span>
-
-    <v-spacer></v-spacer>
-
-    <v-toolbar-items class="hidden-sm-and-down">
-      <v-btn text>
-        Profile
-      </v-btn>
-
-      <v-divider vertical></v-divider>
-
-      <v-btn text>
-        post
-      </v-btn>
-
-      <v-divider vertical></v-divider>
-
-      <v-btn text>
-        creat
-      </v-btn>
-
-      <v-divider vertical></v-divider>
-    </v-toolbar-items>
-
-    <v-app-bar-nav-icon></v-app-bar-nav-icon>
-  </v-toolbar>
-</div>
-
-</div>
 
 </template>
 
@@ -56,29 +24,51 @@ export default {
     name: "header"
         };
 </script>
+
 <style  lang="scss"> 
-body {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.mainlan {
-    margin: 0;
-    width: 100%;
-}
-.titleh1 {
-    margin: 10px 0 10px 35px;
-    font-size: 37px;
-}
+.header{
 
-.toptitle {
-    display: flex;
-    width: 300px;
-    margin-left: auto;
-    p {
-        margin: 8px 13px;
-        
-    }
-
+  background-color: black;
+  height: 160px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 80px;
 }
+.cd{
+  height: 140px;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.saerch{
+  color: white;
+  float: right;
+  margin-right: 20px;
 
+  .ser{
+    display: inline-block;
+    width: 200px;
+    border-bottom: 1px solid white;
+    margin-top: 35px;
+    color: white;
+  }
+  button{
+    margin-left:  20px;
+    border: 1px solid white;
+    padding: 2px 10px;
+  }
+}
+.menu{
+  color: white;
+  margin-top: 95px;
+  p{
+    display: inline-block;
+    margin: 0 25px;
+  }
+  p:hover{
+    color: green;
+  }
+}
+.leftheader{
+  display: block;
+}
 </style>

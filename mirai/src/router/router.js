@@ -1,9 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '@/components/Home.vue'
-import create from '@/components/create.vue'
-import post from '@/components/post.vue'
+import Home from '@/views/Home.vue'
+import create from '@/views/create.vue'
+import post from '@/views/post.vue'
 
 Vue.use(VueRouter)
 
