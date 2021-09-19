@@ -33,5 +33,8 @@
     p{
     margin: 0 20px;
     }
+    p:hover{
+        color: rgb(66, 145, 235);
+    }
 }
 </style>

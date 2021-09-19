@@ -1,16 +1,18 @@
 <template>
-    <div class="header">
-        <img src='../image/cd.png' class="cd">
+    <div class="header">      
+      <router-link to="/">
+      <img src='../image/cd.png' class="cd">
+      </router-link>
             <div class="leftheader">
                 <div class="saerch">
                     <input type="text" class="ser" placeholder="SEARCH...">
                     <button>검색</button>
                 </div>
                 <div class="menu">
-                  <p>BLOG</p>
-                  <p>PODCAST</p>
-                  <p>ABOUT</p>
-                  <p>CONTACT</p>
+                  <router-link to="/profile"  style="color: white;" ><p>PROFILE</p></router-link>
+                  <router-link to="/create" style="color: white;"><p>CREATE</p></router-link>
+                  <router-link to="/question"  style="color: white;"><p>QUESTION</p></router-link>
+                  <router-link to="/login"  style="color: white;"><p>LOGIN</p></router-link>
                 </div>
 
             </div>
@@ -65,10 +67,11 @@ export default {
     margin: 0 25px;
   }
   p:hover{
-    color: green;
+    color: rgb(23, 206, 84);
   }
 }
 .leftheader{
   display: block;
 }
+
 </style>

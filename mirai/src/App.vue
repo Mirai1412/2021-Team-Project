@@ -18,7 +18,6 @@
         name: 'App',
 
         components: {
-            
             Header,
             Bottom
       
