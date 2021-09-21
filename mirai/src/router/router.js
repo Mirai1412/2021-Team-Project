@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 
-import Home from '@/views/Home.vue'
+import Home from '@/views/home.vue'
 import create from '@/views/create.vue'
 import question from '@/views/question.vue'
 import login from '@/views/login.vue'

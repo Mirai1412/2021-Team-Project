@@ -52,11 +52,16 @@ export default {
     border-bottom: 1px solid white;
     margin-top: 35px;
     color: white;
+    padding: 5px;
   }
   button{
-    margin-left:  20px;
+    margin: 40px 0 0 20px;
     border: 1px solid white;
-    padding: 2px 10px;
+    padding: 5px 10px;
+  }
+  button:active{
+    color: black;
+    background: white;
   }
 }
 .menu{

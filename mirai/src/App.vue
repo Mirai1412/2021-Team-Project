@@ -4,23 +4,20 @@
         <v-main>
             <router-view />
         </v-main>
-        <bottom/>
+        <Bottom/>
     </v-app>
 </template>
 
 <script>
-    import Header from '@/components/layout/Header.vue';
-    import Bottom from './components/layout/bottom.vue';
-
+    import Header from '@/components/layout/header.vue';
+    import Bottom from '@/components/layout/bottom.vue';
 
     export default {
-
         name: 'App',
 
         components: {
+            Bottom,
             Header,
-            Bottom
-      
         },
 
         data: () => ({
