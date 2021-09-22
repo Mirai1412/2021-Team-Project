@@ -15,7 +15,7 @@
                 <input type="text" class="in1" placeholder="Name">
                 <input type="text" class="in1" placeholder="Email">
                 <input type="text" class="in1" placeholder="Phone">
-                <input type="text" class="in2" placeholder="message">
+                <textarea class="in2" placeholder="message"></textarea>
                 <v-btn elevation="3" class="btn1">Submit</v-btn>
         </div>
 
@@ -52,7 +52,6 @@
     margin-bottom: 50px;
 }
 .in1{
-    width: 500px;
     height: 35px;
     border: 2px solid black;
     margin-left: 25px;
@@ -60,11 +59,11 @@
     padding-left: 20px;
 }
 .in2{
-    width: 500px;
+    width: 475px;
     height: 100px;
     border: 2px solid black;
     margin-left: 25px;
-    padding-left: 20px;
+    padding: 10px 0 0 20px;
 }
 .btn1{
     margin: 10px 0 0 407px;
