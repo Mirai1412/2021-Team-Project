@@ -1,31 +1,31 @@
 <template>
-    <div class="questionbox">
-        <div class="please">
-            <h1>POST CREATE</h1>
-            <p>If you have any questions, please contact our customer service.
-                <br>
-                    Phone number of the counseling center : 010-9115-2813
-                    <br>
-                        Email to the counseling center : tmdwo7017@naver.com
-                        <br>
-                            Thank you always.
-                        </p>
+<div class="questionbox">
+    <div class="please">
+        <h1>CREATE POST</h1>
+        <p>Welcome to codefinder!
+            <br>
+            Choose the language you want and write down the code
+            <br>
+               you don't know and ask other users at any time.
+            </p>
         </div>
         <div class="inputbox">
-                <input type="text" class="in1" placeholder="title">
+            <input type="text" class="in1" placeholder="title">
 
-                  <select class="lchoose">
-                     <option value="">--Please choose an Language--</option>
-                     <option value="laravel">Laravel</option>
-                     <option value="java">JAVA</option>
-                     <option value="html">HTML&CSS</option>
-                  </select>
+                <select class="lchoose">
+                    <option value="">---------------------------Please choose an
+                        Language------------------------------</option>
+                    <option value="laravel">Laravel</option>
+                    <option value="java">JAVA</option>
+                    <option value="html">HTML&CSS</option>
+                </select>
 
+                <textarea class="in2" placeholder="code"></textarea>
                 <textarea class="in2" placeholder="message"></textarea>
                 <v-btn elevation="3" class="btn1">CREATE</v-btn>
-        </div>
+            </div>
 
-    </div>
+        </div>
 </template>
 <script>
     export default {
@@ -33,37 +33,37 @@
 
     }
 </script>
-<style lang="scss">
-.lchoose{
-   border: 2px black solid;
-   margin: 0 0 5px 26px;
-   width: 475px;
+<style lang="scss" > 
+.lchoose {
+    border: 2px black solid;
+    margin: 0 0 5px 26px;
+    width: 473px;
+    padding: 0 20px;
+}
 
-}
-.questionbox{
+.questionbox {
     width: 550px;
-    margin: 0 auto;
-    margin-top: 50px;
+    margin: 50px auto 0;
 }
-.please{
+.please {
     margin: 25px;
-    h1{
+    h1 {
         width: 250px;
         border-bottom: 3px solid black;
         border-left: 3px solid black;
         padding-left: 10px;
     }
-    p{
+    p {
         margin-top: 10px;
     }
 }
-.inputbox{
+.inputbox {
     display: flex;
     flex-wrap: wrap;
     width: 500px;
     margin-bottom: 50px;
 }
-.in1{
+.in1 {
     width: 500px;
     height: 35px;
     border: 2px solid black;
@@ -71,14 +71,14 @@
     margin-bottom: 5px;
     padding-left: 20px;
 }
-.in2{
+.in2 {
     width: 475px;
     height: 100px;
     border: 2px solid black;
-    margin-left: 25px;
+    margin: 0 0 5px 25px;
     padding: 10px 0 0 20px;
 }
-.btn1{
+.btn1 {
     margin: 10px 0 0 407px;
 }
 </style>

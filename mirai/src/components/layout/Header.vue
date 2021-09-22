@@ -11,7 +11,7 @@
                 <div class="menu">
                   <router-link to="/profile"  style="color: white;" ><p>PROFILE</p></router-link>
                   <router-link to="/create" style="color: white;"><p>CREATE</p></router-link>
-                  <router-link to="/question"  style="color: white;"><p>QUESTION</p></router-link>
+                  <router-link to="/question"  style="color: white;"><p>INQUIRY</p></router-link>
                   <router-link to="/login"  style="color: white;"><p>LOGIN</p></router-link>
                 </div>
 

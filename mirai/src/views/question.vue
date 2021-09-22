@@ -1,25 +1,25 @@
 <template>
-    <div class="questionbox">
-        <div class="please">
-            <h1>Please Inquire</h1>
-            <p>If you have any questions, please contact our customer service.
+<div class="questionbox">
+    <div class="please">
+        <h1>Please Inquiry</h1>
+        <p>If you have any questions, please contact our customer service.
+            <br>
+                Phone number of the counseling center : 010-9115-2813
                 <br>
-                    Phone number of the counseling center : 010-9115-2813
+                    Email to the counseling center : tmdwo7017@naver.com
                     <br>
-                        Email to the counseling center : tmdwo7017@naver.com
-                        <br>
-                            Thank you always.
-                        </p>
-        </div>
-        <div class="inputbox">
-                <input type="text" class="in1" placeholder="Name">
-                <input type="text" class="in1" placeholder="Email">
-                <input type="text" class="in1" placeholder="Phone">
-                <textarea class="in2" placeholder="message"></textarea>
-                <v-btn elevation="3" class="btn1">Submit</v-btn>
-        </div>
+                        Thank you always.
+                    </p>
+                </div>
+                <div class="inputbox">
+                    <input type="text" class="in1" placeholder="Name">
+                        <input type="text" class="in1" placeholder="Email">
+                            <input type="text" class="in1" placeholder="Phone">
+                                <textarea class="in2" placeholder="message"></textarea>
+                                <v-btn elevation="3" class="btn1">Submit</v-btn>
+                            </div>
 
-    </div>
+                        </div>
 </template>
 <script>
     export default {
