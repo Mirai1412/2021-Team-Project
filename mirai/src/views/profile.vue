@@ -7,15 +7,13 @@
         <div class="s1">
             <h1>Post</h1>
             <br>
-            <p>12</p>
+            <p>{{ 변수명 }}</p>
         </div>
-
         <div class="s1">
             <h1>Followers</h1>
             <br>
             <p>129</p>
         </div>
-
         <div class="s1">
             <h1>Comments</h1>
             <br>

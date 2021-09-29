@@ -9,25 +9,7 @@
 
         <div class="mainpostbox">
 
-            <div class="postbox">
-                <div class="homepost">
-                    <img src='./image/ex.jpg' class="img">
-                    <div class="tiltebox">
-                        <img src="./image/ex.jpg" class="profileimg">
-                        <p class="pname">mirai</p>
-                        <p class="pl">Laravel</p>
-                        <p class="pday">2021-09-21</p>
-                    </div>
-                    <div class="contentbox">
-                        <p class="ptitle">Please help me with this question.</p>
-                        <p class="pcontent">User user ID cannot be generated. What should I do?</p>
-                    </div>
-                    <div class="contentbuttom">
-                        <p class="pviews">12 views</p>
-                        <p class="pcomment">4 comments</p>
-                    </div>
-                </div>
-            </div>
+
 
             <div class="postbox">
                 <div class="homepost">
@@ -44,69 +26,14 @@
                     </div>
                     <div class="contentbuttom">
                         <p class="pviews">12 views</p>
-                        <p class="pcomment">4 comments</p>
+                         <router-link to="/post"  style="color: black; text-decoration: none;" class="readto">
+                        <p class="read" >read more</p>
+                         </router-link>
                     </div>
                 </div>
             </div>
 
-            <div class="postbox">
-                <div class="homepost">
-                    <img src='./image/ex.jpg' class="img">
-                    <div class="tiltebox">
-                        <img src="./image/ex.jpg" class="profileimg">
-                        <p class="pname">mirai</p>
-                        <p class="pl">Laravel</p>
-                        <p class="pday">2021-09-21</p>
-                    </div>
-                    <div class="contentbox">
-                        <p class="ptitle">Please help me with this question.</p>
-                        <p class="pcontent">User user ID cannot be generated. What should I do?</p>
-                    </div>
-                    <div class="contentbuttom">
-                        <p class="pviews">12 views</p>
-                        <p class="pcomment">4 comments</p>
-                    </div>
-                </div>
-            </div>
 
-                        <div class="postbox">
-                <div class="homepost">
-                    <img src='./image/ex.jpg' class="img">
-                    <div class="tiltebox">
-                        <img src="./image/ex.jpg" class="profileimg">
-                        <p class="pname">mirai</p>
-                        <p class="pl">Laravel</p>
-                        <p class="pday">2021-09-21</p>
-                    </div>
-                    <div class="contentbox">
-                        <p class="ptitle">Please help me with this question.</p>
-                        <p class="pcontent">User user ID cannot be generated. What should I do?</p>
-                    </div>
-                    <div class="contentbuttom">
-                        <p class="pviews">12 views</p>
-                        <p class="pcomment">4 comments</p>
-                    </div>
-                </div>
-            </div>
-                        <div class="postbox">
-                <div class="homepost">
-                    <img src='./image/ex.jpg' class="img">
-                    <div class="tiltebox">
-                        <img src="./image/ex.jpg" class="profileimg">
-                        <p class="pname">mirai</p>
-                        <p class="pl">Laravel</p>
-                        <p class="pday">2021-09-21</p>
-                    </div>
-                    <div class="contentbox">
-                        <p class="ptitle">Please help me with this question.</p>
-                        <p class="pcontent">User user ID cannot be generated. What should I do?</p>
-                    </div>
-                    <div class="contentbuttom">
-                        <p class="pviews">12 views</p>
-                        <p class="pcomment">4 comments</p>
-                    </div>
-                </div>
-            </div>
 
         </div>
     </div>
@@ -129,6 +56,11 @@
     display: flex;
     flex-wrap: wrap;
 }
+.read:hover{
+    color: green;
+
+}
+
 .title{
     width: 100%;
     display: flex;
@@ -214,8 +146,11 @@
     width: 250px;
     margin: 0 auto;
     display: flex;
+    justify-content: space-between;
+
     p{
-        margin: 20px 20px 20px 0;
+        margin: 20px 0 20px 0;
+
     }
 }
 </style>
