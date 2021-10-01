@@ -1,5 +1,14 @@
 <template>
-    <div class="box">
+    <div class="homebox">
+
+        <div class="homeimgbox">
+            <img src='./image/123.jpg' class="mainimg">
+            <div class="homeimgtitle">
+            <h1>To create a new world</h1> 
+            <p>The Village of Programmers.</p>
+            </div>
+        </div>
+
         <div class="title">
             <p>All Posts</p>
             <p>Laravel</p>
@@ -8,9 +17,6 @@
         </div>
 
         <div class="mainpostbox">
-
-
-
             <div class="postbox">
                 <div class="homepost">
                     <img src='./image/ex.jpg' class="img">
@@ -36,6 +42,22 @@
 
 
         </div>
+
+        <div class="homeline">
+
+        </div>
+
+        <div class="homebox2">
+            <h1>“Don’t worry if it doesn’t work right.
+                <br>
+                If everything did, you’d be out of a job.”</h1>
+            <p>Mosher’s Law</p>
+        </div>
+
+        <div class="homeline">
+
+        </div>
+
     </div>
 </template>
 <script>
@@ -47,12 +69,13 @@
         };
 </script>
 <style lang="scss" > 
-.box{
-    width: 1350px;
+.homebox{
+    width: 100%;
     margin: 0 auto;
 }
 .mainpostbox{
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
 }
@@ -62,9 +85,11 @@
 }
 
 .title{
-    width: 100%;
+    width: 80%;
     display: flex;
-    margin: 30px 0;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
     p{
     margin: 0 20px;
     color: rgb(116, 115, 115);
@@ -147,10 +172,53 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-
     p{
         margin: 20px 0 20px 0;
 
+    }
+}
+.homeimgbox {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    
+    .mainimg {
+        width: 100%;
+        height: 500px;
+        position: absolute;
+    }
+    .homeimgtitle{
+        position: absolute;
+        color: white;
+        border: 2px white solid;
+        width: 40%;
+        height: 130px;
+        padding-top: 30px;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 30%;
+        left: 30%;
+    }
+
+}
+.homeline{
+    width: 80%;
+    height:  1px;
+    border: 1px solid rgba(192, 191, 191, 0.424);
+    margin: 0 auto;
+    margin-bottom: 50px;
+    background-color: rgba(192, 191, 191, 0.424);
+}
+.homebox2{
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    padding-top: 0;
+    margin-bottom: 50px;
+    color:  rgb(105, 105, 105);
+    font-family: 'Bonheur Royale', cursive;
+    h1{
+        padding: 20px;
     }
 }
 </style>
