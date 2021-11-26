@@ -58,6 +58,10 @@
 
         </div>
 
+        <div class="homebox3">
+
+        </div>
+
     </div>
 </template>
 <script>
@@ -220,5 +224,12 @@
     h1{
         padding: 20px;
     }
+}
+.homebox3{
+    width: 80%;
+    border: 1px solid rgba(93, 91, 91, 0.746);
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 50px;
 }
 </style>
